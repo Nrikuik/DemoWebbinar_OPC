@@ -1,2 +1,6 @@
 Name: Model
 Type: ModelCategoryFolder
+Children:
+- Name: ON
+  Type: BaseDataVariableType
+  DataType: Boolean
