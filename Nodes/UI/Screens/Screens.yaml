@@ -5540,7 +5540,12 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 800.0
+    Value: 780.0
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1280.0
 - Name: Screen1
   Id: g=291336c3717c7b05157ada04ff261ade
   Supertype: Screen
