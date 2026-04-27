@@ -9,8 +9,25 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [1,2],
+    "Dimensions": [18,2],
     "Body": [
-     "","en-US"
+     "","en-US",
+     "Timestamp","Timestamp",
+     "TimedShelve","Timed Shelve",
+     "Acknowledge","Acknowledge",
+     "Acknowledge All","Acknowledge All",
+     "Active","Active",
+     "Confirm","Confirm",
+     "OneShotShelve","One-Shot Shelve",
+     "Confirm All","Confirm All",
+     "Name","Name",
+     "SourceName","Source Variable",
+     "Message","Message",
+     "Acked","Acked",
+     "Confirmed","Confirmed",
+     "Severity","Severity",
+     "From","From",
+     "To","To",
+     "Refresh","Refresh"
     ]
    }

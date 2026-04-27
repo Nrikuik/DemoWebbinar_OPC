@@ -1,0 +1,41 @@
+Name: Types
+Type: FolderType
+Children:
+- Name: Bomba
+  Id: g=a35921d99c5720026393aed4eb70877a
+  Supertype: BaseObjectType
+  Children:
+  - Name: Estado
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Corriente
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Voltaje
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Potencia_Activa
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Energia_Acumulada
+    Type: BaseDataVariableType
+    DataType: Float
+- Name: Ventilador
+  Id: g=ab86fa3e0431d6abcdb864622674477d
+  Supertype: BaseObjectType
+  Children:
+  - Name: Estado
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Corriente
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Voltaje
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Potencia_Activa
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Energia_Acumulada
+    Type: BaseDataVariableType
+    DataType: Float

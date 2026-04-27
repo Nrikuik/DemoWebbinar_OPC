@@ -58,16 +58,40 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 4.0
+  15:
+   Uri: 'urn:FTOptix:EventLogger'
+   Module: FTOptix.EventLogger
+   Version: 2.0
+  16:
+   Uri: 'urn:FTOptix:EventLogger:Net'
+   Module: FTOptix.EventLogger.Net
+   Version: 1.0
+  17:
+   Uri: 'urn:FTOptix:Store'
+   Module: FTOptix.Store
+   Version: 2.0
+  18:
+   Uri: 'urn:FTOptix:Store:Net'
+   Module: FTOptix.Store.Net
+   Version: 1.0
+  19:
+   Uri: 'urn:FTOptix:Alarm'
+   Module: FTOptix.Alarm
+   Version: 6.1
+  20:
+   Uri: 'urn:FTOptix:Alarm:Net'
+   Module: FTOptix.Alarm.Net
+   Version: 1.2
  Statistics:
-  TotalNodeCount: 1360
-  Objects: 269
-  ObjectTypes: 3
-  Variables: 1088
+  TotalNodeCount: 2998
+  Objects: 805
+  ObjectTypes: 12
+  Variables: 2179
   VariableTypes: 0
   DataTypes: 0
-  Methods: 0
-  References: 0
+  Methods: 2
+  References: 9
   ReferenceTypes: 0
-  Files: 22
+  Files: 28
  Nodes:
  - File: Nodes/DemoWebbinar_OPC.yaml

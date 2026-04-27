@@ -9,6 +9,9 @@ using FTOptix.Retentivity;
 using FTOptix.CoreBase;
 using FTOptix.Core;
 using FTOptix.NetLogic;
+using FTOptix.Alarm;
+using FTOptix.EventLogger;
+using FTOptix.Store;
 #endregion
 
 [CustomBehavior]

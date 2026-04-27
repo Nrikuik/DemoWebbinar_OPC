@@ -4,3 +4,5 @@ Children:
 - Name: ON
   Type: BaseDataVariableType
   DataType: Boolean
+- File: Instances/Instances.yaml
+- File: Types/Types.yaml

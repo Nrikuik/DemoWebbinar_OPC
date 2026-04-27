@@ -1,200 +1,7 @@
 Name: UI
 Type: UICategoryFolder
 Children:
-- Name: DefaultStyleSheet
-  Id: g=8da2b5865c73184b748c69f73d34bedf
-  Type: StyleSheet
-  Children:
-  - Name: ButtonStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: ButtonStyle
-    - Name: Accent
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#0fafff"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#075982"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-    - Name: BorderedRectangular
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#0fafff"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#e4e4e4"
-      - Name: BorderWidth
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 5.0
-    - Name: BorderedCircular
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#0fafff"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#e4e4e4"
-      - Name: BorderWidth
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 5.0
-      - Name: Radius
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: -1.0
-    - Name: Emergency
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#eb001b"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#f8e71c"
-      - Name: BorderWidth
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 5.0
-      - Name: Radius
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: -1.0
-    - Name: Transparent
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-      - Name: BorderWidth
-        Type: BaseDataVariableType
-        DataType: Size
-  - Name: InputBoxStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: InputBoxStyle
-  - Name: SwitchStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: SwitchStyle
-  - Name: GaugeStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: GaugeStyle
-  - Name: NavigationPanelStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: NavigationPanelStyle
-  - Name: ChartStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: ChartStyle
-  - Name: DataListStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: DataListStyle
-  - Name: ToolTipStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: ToolTipStyle
-  - Name: ScrollBarStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: ScrollBarStyle
-  - Name: AccordionStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: AccordionStyle
-  - Name: PieChartStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: PieChartStyle
-  - Name: HistogramChartStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: HistogramChartStyle
-  - Name: LabelStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: LabelStyle
-  - Name: RadioButtonStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: RadioButtonStyle
-  - Name: CheckBoxStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: CheckBoxStyle
-  - Name: RectangleStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: RectangleStyle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 5.0
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#000000"
-  - Name: ScreenStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: ScreenStyle
+- File: StyleSheets/StyleSheets.yaml
 - Name: NativePresentationEngine
   Type: NativePresentationEngine
   ReferenceType: HasOrderedComponent
@@ -214,7 +21,7 @@ Children:
   - Name: StyleSheet
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/DemoWebbinar_OPC/UI/DefaultStyleSheet"
+    Value: "/Objects/DemoWebbinar_OPC/UI/StyleSheets/FriendlyLight1"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -257,5 +64,405 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     ModellingRule: Optional
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Header
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#65b2ef"
+    - Name: HorizontalLayout1
+      Type: RowLayout
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: LeftBar
+        Type: Rectangle
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#b3b3b3"
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff00"
+        - Name: VerticalLayout1
+          Type: ColumnLayout
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: Button1
+            Type: Button
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"HOME"}
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 40.0
+          - Name: Button2
+            Type: Button
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":""}
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 40.0
+          - Name: Button3
+            Type: Button
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":""}
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 40.0
+          - Name: Button4
+            Type: Button
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":""}
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 40.0
+          - Name: Button5
+            Type: Button
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":""}
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 40.0
+          - Name: Button6
+            Type: Button
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":""}
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 5.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 40.0
+      - Name: PanelLoader1
+        Type: PanelLoader
+        Children:
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/DemoWebbinar_OPC/UI/Screens/ccm"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: CurrentPanel
+          Type: NodePointer
+          DataType: NodeId
+          AccessLevel: Read
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+        - Class: Reference
+          Target: ns=3;i=478
+          Direction: Forward
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 300.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 300.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+    - Name: Foot
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#b3b3b3"
 - File: Screens/Screens.yaml
+- File: Pantallas/Pantallas.yaml
 - File: Keyboards/Keyboards.yaml
+- File: Objets/Objets.yaml
+- File: Alarms/Alarms.yaml
