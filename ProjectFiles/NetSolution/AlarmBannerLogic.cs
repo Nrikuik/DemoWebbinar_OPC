@@ -7,6 +7,7 @@ using FTOptix.NetLogic;
 using FTOptix.Alarm;
 using FTOptix.EventLogger;
 using FTOptix.Store;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic

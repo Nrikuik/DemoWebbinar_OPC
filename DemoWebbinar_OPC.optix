@@ -82,11 +82,19 @@ Project:
    Uri: 'urn:FTOptix:Alarm:Net'
    Module: FTOptix.Alarm.Net
    Version: 1.2
+  21:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 2.0
+  22:
+   Uri: 'urn:FTOptix:OPCUAServer:Net'
+   Module: FTOptix.OPCUAServer.Net
+   Version: 2.0
  Statistics:
-  TotalNodeCount: 2998
-  Objects: 805
+  TotalNodeCount: 3087
+  Objects: 813
   ObjectTypes: 12
-  Variables: 2179
+  Variables: 2260
   VariableTypes: 0
   DataTypes: 0
   Methods: 2
