@@ -50,3 +50,51 @@ Children:
     Id: g=97e6b3bbceefbb7a111c3ff43f60dcb4
     Type: BaseDataVariableType
     DataType: Float
+- Name: Bomba2
+  Id: g=8cffbf5220af57e1f98fccad99cf2708
+  Type: Bomba
+  Children:
+  - Name: Estado
+    Id: g=7154bc7983cc745a274cee331abb3d28
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Corriente
+    Id: g=0bbb841522e41aaec47cb002e39c9f16
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Voltaje
+    Id: g=a9bcfcb03c7aa74ea7b7c57eb69a2422
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Potencia_Activa
+    Id: g=f4c4b7740e0fc683f4962cfb1e2280f0
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Energia_Acumulada
+    Id: g=ca79d7fd895a9989bd90fcd62a61c275
+    Type: BaseDataVariableType
+    DataType: Float
+- Name: Ventilador2
+  Id: g=8d0c916b100bbf6a63cd98f715d8080a
+  Type: Ventilador
+  Children:
+  - Name: Estado
+    Id: g=2eafbd472052fa311f8f1a26db6317f0
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Corriente
+    Id: g=f6cec630f767f8d23694911aec01c274
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Voltaje
+    Id: g=8eb42ea654bae26f8b25476fe04e49e4
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Potencia_Activa
+    Id: g=b17857735a6d4febc75bdee218f6a91f
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Energia_Acumulada
+    Id: g=770ae64a93f68e0011876e2abc7561d8
+    Type: BaseDataVariableType
+    DataType: Float

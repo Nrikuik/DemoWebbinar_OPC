@@ -122,7 +122,7 @@ Children:
                           - Name: DynamicLink
                             Type: DynamicLink
                             DataType: NodePath
-                            Value: "/Objects/DemoWebbinar_OPC/Model/Types/Bomba@BrowseName"
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Estado"
                         - Name: TrueValue
                           Type: BaseDataVariableType
                           DataType: Color
@@ -211,6 +211,37 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: StringFormatter1
+                        Type: StringFormatter
+                        Children:
+                        - Name: Format
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: {"LocaleId":"","Text":"{0:n3}"}
+                        - Name: ns=2;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Corriente"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                              Value: 2
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: Visible
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -231,6 +262,37 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: StringFormatter1
+                        Type: StringFormatter
+                        Children:
+                        - Name: Format
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: {"LocaleId":"","Text":"{0:n3}"}
+                        - Name: ns=2;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Voltaje"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                              Value: 2
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: TextHorizontalAlignment
                       Type: BaseVariableType
                       DataType: TextHorizontalAlignment
@@ -252,6 +314,37 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: StringFormatter1
+                        Type: StringFormatter
+                        Children:
+                        - Name: Format
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: {"LocaleId":"","Text":"{0:n3}"}
+                        - Name: ns=2;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Potencia_Activa"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                              Value: 2
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: TextHorizontalAlignment
                       Type: BaseVariableType
                       DataType: TextHorizontalAlignment
@@ -273,6 +366,37 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: StringFormatter1
+                        Type: StringFormatter
+                        Children:
+                        - Name: Format
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: {"LocaleId":"","Text":"{0:n3}"}
+                        - Name: ns=2;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Energia_Acumulada"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                              Value: 2
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: TextHorizontalAlignment
                       Type: BaseVariableType
                       DataType: TextHorizontalAlignment
@@ -298,7 +422,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "/Objects/DemoWebbinar_OPC/Model/Types/Bomba/Estado"
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Estado"
                         Children:
                         - Name: Mode
                           Type: BaseVariableType
@@ -333,6 +457,31 @@ Children:
                       Type: BaseDataVariableType
                       DataType: Color
                       Value: "#d0d2d3"
+                      Children:
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador1/Estado"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: Color
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: "#1cd519be"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: Color
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: "#eb001b96"
                     - Name: BladeColor
                       Type: BaseDataVariableType
                       DataType: Color
@@ -1119,6 +1268,37 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: StringFormatter1
+                        Type: StringFormatter
+                        Children:
+                        - Name: Format
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: {"LocaleId":"","Text":"{0:n3}"}
+                        - Name: ns=2;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador1/Corriente"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                              Value: 2
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: FontSize
                       Type: BaseDataVariableType
                       DataType: Size
@@ -1130,6 +1310,37 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: StringFormatter1
+                        Type: StringFormatter
+                        Children:
+                        - Name: Format
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: {"LocaleId":"","Text":"{0:n3}"}
+                        - Name: ns=2;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador1/Voltaje"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                              Value: 2
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: TextHorizontalAlignment
                       Type: BaseVariableType
                       DataType: TextHorizontalAlignment
@@ -1151,6 +1362,37 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: StringFormatter1
+                        Type: StringFormatter
+                        Children:
+                        - Name: Format
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: {"LocaleId":"","Text":"{0:n3}"}
+                        - Name: ns=2;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador1/Potencia_Activa"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                              Value: 2
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: TextHorizontalAlignment
                       Type: BaseVariableType
                       DataType: TextHorizontalAlignment
@@ -1172,6 +1414,37 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: StringFormatter1
+                        Type: StringFormatter
+                        Children:
+                        - Name: Format
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: {"LocaleId":"","Text":"{0:n3}"}
+                        - Name: ns=2;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador1/Energia_Acumulada"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                              Value: 2
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: TextHorizontalAlignment
                       Type: BaseVariableType
                       DataType: TextHorizontalAlignment
@@ -1193,6 +1466,17 @@ Children:
                     - Name: Checked
                       Type: BaseDataVariableType
                       DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador1/Estado"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
                 - Name: VerticalLayout4
                   Type: ColumnLayout
                   Children:
@@ -1367,6 +1651,31 @@ Children:
                       Type: BaseDataVariableType
                       DataType: Color
                       Value: "#bcbec0"
+                      Children:
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba2/Estado"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: Color
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: "#1cd519be"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: Color
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: "#eb001b96"
                     - Name: standard_motor_outline
                       Type: Image
                       Children:
@@ -1437,6 +1746,37 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: StringFormatter1
+                        Type: StringFormatter
+                        Children:
+                        - Name: Format
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: {"LocaleId":"","Text":"{0:n3}"}
+                        - Name: ns=2;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba2/Corriente"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                              Value: 2
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: FontSize
                       Type: BaseDataVariableType
                       DataType: Size
@@ -1449,6 +1789,37 @@ Children:
                       Type: BaseDataVariableType
                       DataType: LocalizedText
                       Value: {"LocaleId":"en-US","Text":""}
+                      Children:
+                      - Name: StringFormatter1
+                        Type: StringFormatter
+                        Children:
+                        - Name: Format
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: {"LocaleId":"","Text":"{0:n3}"}
+                        - Name: ns=2;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba2/Voltaje"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                              Value: 2
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: TextHorizontalAlignment
                       Type: BaseVariableType
                       DataType: TextHorizontalAlignment
@@ -1470,6 +1841,37 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: StringFormatter1
+                        Type: StringFormatter
+                        Children:
+                        - Name: Format
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: {"LocaleId":"","Text":"{0:n3}"}
+                        - Name: ns=2;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba2/Potencia_Activa"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                              Value: 2
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: TextHorizontalAlignment
                       Type: BaseVariableType
                       DataType: TextHorizontalAlignment
@@ -1491,6 +1893,37 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: StringFormatter1
+                        Type: StringFormatter
+                        Children:
+                        - Name: Format
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: {"LocaleId":"","Text":"{0:n3}"}
+                        - Name: ns=2;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba2/Energia_Acumulada"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                              Value: 2
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: TextHorizontalAlignment
                       Type: BaseVariableType
                       DataType: TextHorizontalAlignment
@@ -1512,6 +1945,17 @@ Children:
                     - Name: Checked
                       Type: BaseDataVariableType
                       DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba2/Estado"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
                 - Name: VerticalLayout4
                   Type: ColumnLayout
                   Children:
@@ -1540,6 +1984,31 @@ Children:
                       Type: BaseDataVariableType
                       DataType: Color
                       Value: "#d0d2d3"
+                      Children:
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador2/Estado"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: Color
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: "#1cd519be"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: Color
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: "#eb001b96"
                     - Name: BladeColor
                       Type: BaseDataVariableType
                       DataType: Color
@@ -2320,6 +2789,37 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: StringFormatter1
+                        Type: StringFormatter
+                        Children:
+                        - Name: Format
+                          Type: BaseDataVariableType
+                          DataType: LocalizedText
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: {"LocaleId":"","Text":"{0:n3}"}
+                        - Name: ns=2;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador2/Corriente"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                              Value: 2
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: FontSize
                       Type: BaseDataVariableType
                       DataType: Size
@@ -2331,6 +2831,17 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador2/Voltaje"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: TextHorizontalAlignment
                       Type: BaseVariableType
                       DataType: TextHorizontalAlignment
@@ -2352,6 +2863,17 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador2/Potencia_Activa"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: TextHorizontalAlignment
                       Type: BaseVariableType
                       DataType: TextHorizontalAlignment
@@ -2373,6 +2895,17 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador2/Energia_Acumulada"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
                     - Name: TextHorizontalAlignment
                       Type: BaseVariableType
                       DataType: TextHorizontalAlignment
@@ -2394,6 +2927,25 @@ Children:
                     - Name: Checked
                       Type: BaseDataVariableType
                       DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador2/Estado"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: CheckedText
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador2/Estado"
                 - Name: VerticalLayout4
                   Type: ColumnLayout
                   Children:
