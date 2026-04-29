@@ -1,2 +1,39 @@
 Name: Instances
 Type: FolderType
+Children:
+- Name: Bomba1
+  Type: Bomba
+  Children:
+  - Name: Estado
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Corriente
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Voltaje
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Potencia_Activa
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Energia_Acumulada
+    Type: BaseDataVariableType
+    DataType: Float
+- Name: Ventilador1
+  Type: Ventilador
+  Children:
+  - Name: Estado
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Corriente
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Voltaje
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Potencia_Activa
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Energia_Acumulada
+    Type: BaseDataVariableType
+    DataType: Float

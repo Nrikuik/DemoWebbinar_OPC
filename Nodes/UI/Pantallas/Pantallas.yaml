@@ -1171,6 +1171,11 @@ Children:
           DataType: HorizontalAlignment
           ModellingRule: Optional
           Value: 2
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
       - Name: AlarmHistoryGrid1
         Type: AlarmHistoryGrid
         Children:
@@ -1714,4 +1719,4 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 10.0
+          Value: 20.0
