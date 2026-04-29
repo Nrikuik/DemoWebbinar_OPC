@@ -196,7 +196,7 @@ Children:
       Value: 40.0
     - Name: FontSize
       Type: BaseDataVariableType
-      DataType: Float
+      DataType: Size
       ModellingRule: Optional
       Value: 25.0
     - Name: EventHandler1
@@ -303,7 +303,7 @@ Children:
       Value: 40.0
     - Name: FontSize
       Type: BaseDataVariableType
-      DataType: Float
+      DataType: Size
       ModellingRule: Optional
       Value: 25.0
     - Name: EventHandler1
