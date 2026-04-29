@@ -99,10 +99,10 @@ Project:
    Module: FTOptix.SQLiteStore.Net
    Version: 1.0
  Statistics:
-  TotalNodeCount: 3120
-  Objects: 818
+  TotalNodeCount: 3132
+  Objects: 820
   ObjectTypes: 12
-  Variables: 2288
+  Variables: 2298
   VariableTypes: 0
   DataTypes: 0
   Methods: 2
