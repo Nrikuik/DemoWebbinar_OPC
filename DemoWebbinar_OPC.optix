@@ -106,24 +106,16 @@ Project:
    Uri: 'urn:FTOptix:OPCUAServer:Net'
    Module: FTOptix.OPCUAServer.Net
    Version: 2.0
-  27:
-   Uri: 'urn:FTOptix:OPCUAClient'
-   Module: FTOptix.OPCUAClient
-   Version: 2.0
-  28:
-   Uri: 'urn:FTOptix:OPCUAClient:Net'
-   Module: FTOptix.OPCUAClient.Net
-   Version: 1.2
  Statistics:
-  TotalNodeCount: 3638
-  Objects: 894
+  TotalNodeCount: 3626
+  Objects: 892
   ObjectTypes: 13
-  Variables: 2729
+  Variables: 2719
   VariableTypes: 0
   DataTypes: 0
   Methods: 2
-  References: 37
+  References: 28
   ReferenceTypes: 0
-  Files: 29
+  Files: 28
  Nodes:
  - File: Nodes/DemoWebbinar_OPC.yaml
