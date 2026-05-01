@@ -51,50 +51,50 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
 - Name: Bomba2
-  Id: g=8cffbf5220af57e1f98fccad99cf2708
+  Id: g=074677143b32e104ac657bec7e6d453f
   Type: Bomba
   Children:
   - Name: Estado
-    Id: g=7154bc7983cc745a274cee331abb3d28
+    Id: g=42629018b6d0ca9d507171a12827e3a7
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: Corriente
-    Id: g=0bbb841522e41aaec47cb002e39c9f16
+    Id: g=eec39cb7df5e90cf0d90bdffd4d4a053
     Type: BaseDataVariableType
     DataType: Float
   - Name: Voltaje
-    Id: g=a9bcfcb03c7aa74ea7b7c57eb69a2422
+    Id: g=f9e7306eb2f7570c68014e7566a35e5b
     Type: BaseDataVariableType
     DataType: Float
   - Name: Potencia_Activa
-    Id: g=f4c4b7740e0fc683f4962cfb1e2280f0
+    Id: g=df0dfe5df5dc4b74f6e8b854d8bb312d
     Type: BaseDataVariableType
     DataType: Float
   - Name: Energia_Acumulada
-    Id: g=ca79d7fd895a9989bd90fcd62a61c275
+    Id: g=068af898148bdd30c91d5c094e7c6df1
     Type: BaseDataVariableType
     DataType: Float
 - Name: Ventilador2
-  Id: g=8d0c916b100bbf6a63cd98f715d8080a
+  Id: g=0ef3e661a8f53234474d785007fe9d0b
   Type: Ventilador
   Children:
   - Name: Estado
-    Id: g=2eafbd472052fa311f8f1a26db6317f0
+    Id: g=8d2b4138e90e90980427fe5600176edc
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: Corriente
-    Id: g=f6cec630f767f8d23694911aec01c274
+    Id: g=468098c3af04cbe5e40b6a56d6913f49
     Type: BaseDataVariableType
     DataType: Float
   - Name: Voltaje
-    Id: g=8eb42ea654bae26f8b25476fe04e49e4
+    Id: g=c6971dbb0f4c9afa5ec898c7dcaa4e05
     Type: BaseDataVariableType
     DataType: Float
   - Name: Potencia_Activa
-    Id: g=b17857735a6d4febc75bdee218f6a91f
+    Id: g=d0911eb147f87241090084147cce7eb2
     Type: BaseDataVariableType
     DataType: Float
   - Name: Energia_Acumulada
-    Id: g=770ae64a93f68e0011876e2abc7561d8
+    Id: g=2a2783829a094cd2455dbcf33c892887
     Type: BaseDataVariableType
     DataType: Float
