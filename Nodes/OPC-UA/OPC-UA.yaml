@@ -62,11 +62,12 @@ Children:
         Value: true
   - Name: MinimumMessageSecurityMode
     Type: PropertyType
-    DataType: MessageSecurityModeEnum
+    DataType: ns=25;MessageSecurityModeEnum
   - Name: MinimumSecurityPolicy
     Type: PropertyType
-    DataType: SecurityPolicyEnum
+    DataType: ns=25;SecurityPolicyEnum
   - Name: CertificateIsExpired
     Type: BaseDataVariableType
     DataType: Boolean
     AccessLevel: Read
+- File: OPCUAClient1/OPCUAClient1.yaml

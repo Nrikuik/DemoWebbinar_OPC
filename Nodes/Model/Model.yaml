@@ -8,3 +8,243 @@ Children:
   DataType: Boolean
 - File: Instances/Instances.yaml
 - File: Types/Types.yaml
+- Name: CIKW
+  Id: g=9624e341ed6058533b4c127b86321f4a
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Vp
+  Id: g=0e6e786d3a20fe6b911998eeb658266d
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: ExpressionEvaluator1
+    Id: g=42e049081ced6473882a2899d1c2f9e7
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Id: g=9c19b40407164a78fb20e976cefacc7b
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "({0}+{1}+{2}+{3})/4"
+    - Name: ns=2;Source0
+      Id: g=93b994d3304f4427c70d7c27f8a83e9e
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=d8acb9c0995fecf7518c82ab50972213
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Bomba1/Voltaje"
+    - Name: ns=2;Source1
+      Id: g=07bdf9cc47846e5be58d552a7709b9be
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=3070bc8123539cddf21c99652df8acb3
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Bomba2/Voltaje"
+    - Name: ns=2;Source2
+      Id: g=97ff4b2d161c36321dd63ae9b08c2dd2
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=e3407e0a873210eef935ab70fca2f48a
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Ventilador1/Voltaje"
+    - Name: ns=2;Source3
+      Id: g=0e5af1026361722adcb8045b2064098c
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=6626bdf4ae9464fd9c2c97bad9028667
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Ventilador2/Voltaje"
+- Name: Cp
+  Id: g=8057d112c81933399d86ea88aa44eb82
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: ExpressionEvaluator1
+    Id: g=23e8fbde1d796d82009bd39b1ecb774a
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Id: g=46ceb9a406be1da0845aad96e846b0a0
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "({0}+{1}+{2}+{3})/4"
+    - Name: ns=2;Source0
+      Id: g=61713de95174964e33361587d81ab2bb
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=3c2ea8363392736b6bdaed24f4283aa6
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Bomba1/Corriente"
+    - Name: ns=2;Source1
+      Id: g=4a8e98f853f44757139ab41eaf23ad33
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=1b7ff83af053b80bcaae9b090f439d0e
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Bomba2/Corriente"
+    - Name: ns=2;Source2
+      Id: g=32336ce22b291599d64e34c3d463e563
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=9ef62f8b74df0e2ece5319d9fea74861
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Ventilador1/Corriente"
+    - Name: ns=2;Source3
+      Id: g=17490517a011530932709d53e3cefd36
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=7b5f131fd04c801f53cecb6686355f41
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Ventilador2/Corriente"
+- Name: PAp
+  Id: g=e9d66d32ff416c0f013f6aa3992e4286
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: ExpressionEvaluator1
+    Id: g=023557811085fdb6f8f4c64297a4f996
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Id: g=093df438cb0923c873465fc8d2294f2a
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "({0}+{1}+{2}+{3})/4"
+    - Name: ns=2;Source0
+      Id: g=8af07a69d1a0fece30ef44ff72964101
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=b2e52e9dc6568e6ca7a17f1694c87f4b
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Bomba1/Potencia_Activa"
+    - Name: ns=2;Source1
+      Id: g=865a2351ee7565abbfddc2c67afe1ccf
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=6ddd74757aa64336e94441c48ee96af7
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Bomba2/Potencia_Activa"
+    - Name: ns=2;Source2
+      Id: g=1911e47d3e0bdfd3c645edc3d69ee7f8
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=accb1ab31976a7dc6624e7fd925cbb59
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Ventilador1/Potencia_Activa"
+    - Name: ns=2;Source3
+      Id: g=b56caaef28387d1b0779217111dcb20b
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=b4dada42c2eceed9901222043b730772
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Ventilador2/Potencia_Activa"
+- Name: EAp
+  Id: g=fe9e3bffea18c606c3f0e288944782af
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: ExpressionEvaluator1
+    Id: g=5fc4f515632f85a6f75422530cbce3a6
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Id: g=b21ab455a18352697b09f31069a2ab2f
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "({0}+{1}+{2}+{3})/4"
+    - Name: ns=2;Source0
+      Id: g=e8985205c29c7f1f8c971a23eddd5f71
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=a3684c811a924d81ab48353904b6770b
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Bomba1/Energia_Acumulada"
+    - Name: ns=2;Source1
+      Id: g=57e23439bc591d99b2cae7d35976cc78
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=cba2fdad4a9083751fde849b1da0be4d
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Bomba2/Energia_Acumulada"
+    - Name: ns=2;Source2
+      Id: g=e6741c90837b9cd67d1c9c9211f7efde
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=24e097915ba03b95a3b258a257101eed
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Ventilador1/Energia_Acumulada"
+    - Name: ns=2;Source3
+      Id: g=17a86c101e308abcdc792d705a466fd2
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=589674bb3bb1bf0aa7bd4e0a03fd4eb9
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Instances/Ventilador2/Energia_Acumulada"

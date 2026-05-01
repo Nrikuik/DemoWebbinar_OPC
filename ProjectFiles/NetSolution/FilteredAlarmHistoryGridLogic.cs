@@ -12,6 +12,7 @@ using FTOptix.OPCUAServer;
 using FTOptix.Store;
 using FTOptix.SQLiteStore;
 using FTOptix.DataLogger;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class FilteredAlarmHistoryGridLogic : BaseNetLogic

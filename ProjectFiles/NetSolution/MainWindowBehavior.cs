@@ -14,6 +14,7 @@ using FTOptix.EventLogger;
 using FTOptix.Store;
 using FTOptix.DataLogger;
 using FTOptix.SQLiteStore;
+using FTOptix.OPCUAClient;
 #endregion
 
 [CustomBehavior]
