@@ -1109,6 +1109,11 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               Value: true
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Rectangle1/VerticalLayout2/Motor2/Checked"
             - Name: Thresholds
               Type: BaseObjectType
             - Name: Color
@@ -1138,6 +1143,11 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               Value: true
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Rectangle1/VerticalLayout2/Motor2/Checked"
             - Name: Thresholds
               Type: BaseObjectType
             - Name: Color
@@ -1167,6 +1177,11 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               Value: true
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Rectangle1/VerticalLayout2/Motor3/Checked"
             - Name: Thresholds
               Type: BaseObjectType
             - Name: Color
@@ -1196,6 +1211,11 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               Value: true
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Rectangle1/VerticalLayout2/Motor3/Checked"
             - Name: Thresholds
               Type: BaseObjectType
             - Name: Color
@@ -1225,6 +1245,11 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               Value: true
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Rectangle1/VerticalLayout2/Motor4/Checked"
             - Name: Thresholds
               Type: BaseObjectType
             - Name: Color
@@ -1254,6 +1279,11 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               Value: true
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Rectangle1/VerticalLayout2/Motor4/Checked"
             - Name: Thresholds
               Type: BaseObjectType
             - Name: Color
