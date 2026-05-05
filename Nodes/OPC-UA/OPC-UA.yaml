@@ -41,6 +41,18 @@ Children:
             Type: PropertyType
             DataType: NodePointerNodeClass
             Value: 2
+        - Name: Node3
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/DemoWebbinar_OPC/UI/Pantallas/GestionEnergetica"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: NodeClass
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            Value: 2
       - Name: Users
         Type: BaseObjectType
         Children:

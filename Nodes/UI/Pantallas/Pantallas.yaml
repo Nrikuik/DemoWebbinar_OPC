@@ -9,6 +9,1006 @@ Children:
   - Name: HorizontalLayout1
     Type: RowLayout
     Children:
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 320.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalLayout2
+        Type: ColumnLayout
+        Children:
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Dispositivo"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 26.0
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 20.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+        - Name: Motor1
+          Type: RadioButton
+          Children:
+          - Name: Checked
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Motor 1 "}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 20.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 30.0
+          - Name: ModifiedValueHandler1
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/UserValueChanged"
+            - Name: ListenObject
+              Type: NodePointer
+              DataType: NodeId
+              ReferenceType: HasProperty
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: NodeClass
+                Type: PropertyType
+                DataType: NodePointerNodeClass
+                ModellingRule: Optional
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../Ventilador1@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: MethodsToCall
+              Type: BaseObjectType
+            - Name: EventArguments
+              Type: UserValueChanged
+              Children:
+              - Name: NewValue
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: LocalTime
+                Type: PropertyType
+                DataType: TimeZoneDataType
+                ModellingRule: Optional
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
+              - Name: ConditionClassId
+                Type: PropertyType
+                DataType: NodeId
+                ModellingRule: Optional
+              - Name: ConditionClassName
+                Type: PropertyType
+                DataType: LocalizedText
+                ModellingRule: Optional
+              - Name: ConditionSubClassId
+                Type: PropertyType
+                DataType: NodeId
+                ModellingRule: Optional
+                ValueRank: OneDimension
+                ArrayDimensions: [0]
+              - Name: ConditionSubClassName
+                Type: PropertyType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                ValueRank: OneDimension
+                ArrayDimensions: [0]
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 300.0
+        - Name: Button1
+          Type: Button
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Encender"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 130.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -24.0
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: Label2
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Voltaje"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 16.0
+        - Name: LinearGauge1
+          Type: LinearGauge
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: 100.0
+          - Name: WarningZones
+            Type: BaseObjectType
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 180.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 21.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 110.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -16.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: Label3
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Corriente"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 49.0
+        - Name: LinearGauge2
+          Type: LinearGauge
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: 100.0
+          - Name: WarningZones
+            Type: BaseObjectType
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 180.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 21.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 110.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -16.0
+        - Name: Motor2
+          Type: RadioButton
+          Children:
+          - Name: Checked
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Ventilador 1"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 19.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 55.0
+          - Name: ModifiedValueHandler1
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/UserValueChanged"
+            - Name: ListenObject
+              Type: NodePointer
+              DataType: NodeId
+              ReferenceType: HasProperty
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: NodeClass
+                Type: PropertyType
+                DataType: NodePointerNodeClass
+                ModellingRule: Optional
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../Ventilador1@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: MethodsToCall
+              Type: BaseObjectType
+            - Name: EventArguments
+              Type: UserValueChanged
+              Children:
+              - Name: NewValue
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: LocalTime
+                Type: PropertyType
+                DataType: TimeZoneDataType
+                ModellingRule: Optional
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
+              - Name: ConditionClassId
+                Type: PropertyType
+                DataType: NodeId
+                ModellingRule: Optional
+              - Name: ConditionClassName
+                Type: PropertyType
+                DataType: LocalizedText
+                ModellingRule: Optional
+              - Name: ConditionSubClassId
+                Type: PropertyType
+                DataType: NodeId
+                ModellingRule: Optional
+                ValueRank: OneDimension
+                ArrayDimensions: [0]
+              - Name: ConditionSubClassName
+                Type: PropertyType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                ValueRank: OneDimension
+                ArrayDimensions: [0]
+        - Name: Button2
+          Type: Button
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Encender"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 130.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -24.0
+        - Name: Label4
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Voltaje"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 16.0
+        - Name: LinearGauge3
+          Type: LinearGauge
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: 100.0
+          - Name: WarningZones
+            Type: BaseObjectType
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 180.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 21.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 110.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -16.0
+        - Name: Label5
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Corriente"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 49.0
+        - Name: LinearGauge4
+          Type: LinearGauge
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: 100.0
+          - Name: WarningZones
+            Type: BaseObjectType
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 180.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 21.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 110.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -16.0
+        - Name: Motor3
+          Type: RadioButton
+          Children:
+          - Name: Checked
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Motor 2"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 19.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 55.0
+          - Name: ModifiedValueHandler1
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/UserValueChanged"
+            - Name: ListenObject
+              Type: NodePointer
+              DataType: NodeId
+              ReferenceType: HasProperty
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: NodeClass
+                Type: PropertyType
+                DataType: NodePointerNodeClass
+                ModellingRule: Optional
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../Ventilador1@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: MethodsToCall
+              Type: BaseObjectType
+            - Name: EventArguments
+              Type: UserValueChanged
+              Children:
+              - Name: NewValue
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: LocalTime
+                Type: PropertyType
+                DataType: TimeZoneDataType
+                ModellingRule: Optional
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
+              - Name: ConditionClassId
+                Type: PropertyType
+                DataType: NodeId
+                ModellingRule: Optional
+              - Name: ConditionClassName
+                Type: PropertyType
+                DataType: LocalizedText
+                ModellingRule: Optional
+              - Name: ConditionSubClassId
+                Type: PropertyType
+                DataType: NodeId
+                ModellingRule: Optional
+                ValueRank: OneDimension
+                ArrayDimensions: [0]
+              - Name: ConditionSubClassName
+                Type: PropertyType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                ValueRank: OneDimension
+                ArrayDimensions: [0]
+        - Name: Button3
+          Type: Button
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Encender"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 130.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -24.0
+        - Name: Label6
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Voltaje"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 16.0
+        - Name: LinearGauge5
+          Type: LinearGauge
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: 100.0
+          - Name: WarningZones
+            Type: BaseObjectType
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 180.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 21.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 110.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -16.0
+        - Name: Label7
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Corriente"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 49.0
+        - Name: LinearGauge6
+          Type: LinearGauge
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: 100.0
+          - Name: WarningZones
+            Type: BaseObjectType
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 180.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 21.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 110.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -16.0
+        - Name: Motor4
+          Type: RadioButton
+          Children:
+          - Name: Checked
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Ventilador 2"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 19.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 55.0
+          - Name: ModifiedValueHandler1
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/UserValueChanged"
+            - Name: ListenObject
+              Type: NodePointer
+              DataType: NodeId
+              ReferenceType: HasProperty
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: NodeClass
+                Type: PropertyType
+                DataType: NodePointerNodeClass
+                ModellingRule: Optional
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../Ventilador1@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: MethodsToCall
+              Type: BaseObjectType
+            - Name: EventArguments
+              Type: UserValueChanged
+              Children:
+              - Name: NewValue
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: LocalTime
+                Type: PropertyType
+                DataType: TimeZoneDataType
+                ModellingRule: Optional
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
+              - Name: ConditionClassId
+                Type: PropertyType
+                DataType: NodeId
+                ModellingRule: Optional
+              - Name: ConditionClassName
+                Type: PropertyType
+                DataType: LocalizedText
+                ModellingRule: Optional
+              - Name: ConditionSubClassId
+                Type: PropertyType
+                DataType: NodeId
+                ModellingRule: Optional
+                ValueRank: OneDimension
+                ArrayDimensions: [0]
+              - Name: ConditionSubClassName
+                Type: PropertyType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                ValueRank: OneDimension
+                ArrayDimensions: [0]
+        - Name: Button4
+          Type: Button
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Encender"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 130.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -24.0
+        - Name: Label8
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Voltaje"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 16.0
+        - Name: LinearGauge7
+          Type: LinearGauge
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: 100.0
+          - Name: WarningZones
+            Type: BaseObjectType
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 180.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 21.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 110.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -16.0
+        - Name: Label9
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Corriente"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 49.0
+        - Name: LinearGauge8
+          Type: LinearGauge
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: 100.0
+          - Name: WarningZones
+            Type: BaseObjectType
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 180.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 21.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 110.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -16.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#b3b3b3"
     - Name: VerticalLayout2
       Type: ColumnLayout
       Children:
@@ -16,117 +1016,10 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-      - Name: Label1
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"Dispositivo"}
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 26.0
-        - Name: FontSize
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 20.0
-        - Name: HorizontalAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 2
-      - Name: Motor1
-        Type: RadioButton
-        Children:
-        - Name: Checked
-          Type: BaseDataVariableType
-          DataType: Boolean
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"Motor 1 "}
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 33.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-      - Name: Ventilador1
-        Type: RadioButton
-        Children:
-        - Name: Checked
-          Type: BaseDataVariableType
-          DataType: Boolean
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"OptionButton1"}
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 33.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-      - Name: Motor2
-        Type: RadioButton
-        Children:
-        - Name: Checked
-          Type: BaseDataVariableType
-          DataType: Boolean
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"Motor 2"}
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 33.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-      - Name: Ventilador 2
-        Type: RadioButton
-        Children:
-        - Name: Checked
-          Type: BaseDataVariableType
-          DataType: Boolean
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"OptionButton1"}
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 33.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
     - Name: VerticalLayout1
       Type: ColumnLayout
       Children:
@@ -136,7 +1029,75 @@ Children:
         - Name: Pens
           Type: BaseObjectType
           Children:
-          - Name: TrendPen1
+          - Name: Corriente
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Rectangle1/VerticalLayout2/Motor1/Checked"
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#f3da08"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Corriente/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Voltaje
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Rectangle1/VerticalLayout2/Motor1/Checked"
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ff7514"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Voltaje/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Corriente1
             Type: TrendPen
             DataType: BaseDataType
             Children:
@@ -150,6 +1111,166 @@ Children:
               Value: true
             - Name: Thresholds
               Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#84c3be"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Corriente1/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Voltaje1
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#8f8b66"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Voltaje1/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Corriente2
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#f3a505"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Corriente2/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Voltaje2
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#bdecb6"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Voltaje2/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Corriente3
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#3a83bd"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Corriente3/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Voltaje3
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#d72d6d"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Voltaje3/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
         - Class: Reference
           Target: ns=3;i=1129
           Direction: Forward
@@ -243,7 +1364,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 20.0
+          Value: 30.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
@@ -254,6 +1375,17 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 50.0
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/DemoWebbinar_OPC/Loggers/DataLogger1"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
       - Name: HorizontalLayout1
         Type: RowLayout
         Children:
@@ -407,7 +1539,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: LocalizedText
                 ModellingRule: Optional
-                Value: {"LocaleId":"en-US","Text":"Label1"}
+                Value: {"LocaleId":"en-US","Text":"Corriente"}
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -442,7 +1574,12 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             ModellingRule: Optional
-            Value: "#ffffff00"
+            Value: "#b3b3b3"
+          - Name: BorderColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#000000"
         - Name: Rectangle2
           Type: Rectangle
           Children:
@@ -568,7 +1705,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: LocalizedText
                 ModellingRule: Optional
-                Value: {"LocaleId":"en-US","Text":"Label1"}
+                Value: {"LocaleId":"en-US","Text":"Voltaje"}
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -603,7 +1740,12 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             ModellingRule: Optional
-            Value: "#ffffff00"
+            Value: "#cfcfcf"
+  - Name: BackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#223748"
 - Name: Alarms
   Id: g=6399f98b88cd6f20158ffe1114a17d00
   Supertype: Layout
@@ -1837,662 +2979,804 @@ Children:
   ReferenceType: HasComponent
   Children:
   - Name: Rectangle1
+    Id: g=8713abe4a846425c8b5955c6f7675380
     Type: Rectangle
     Children:
     - Name: Width
+      Id: g=df12a62e557e2d979732c89a798d6e7f
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 50.0
     - Name: Height
+      Id: g=08ed10d6bca27980cfe9db64e433f361
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 50.0
     - Name: HorizontalAlignment
+      Id: g=5002dcd7d32a9c63bd97fda1324f9897
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
       Value: 3
     - Name: VerticalAlignment
+      Id: g=cad1d8de3520e0324b261f89950583a7
       Type: BaseVariableType
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
     - Name: FillColor
+      Id: g=24cbc17363bbedd16f29530f851bced4
       Type: BaseDataVariableType
       DataType: Color
       ModellingRule: Optional
       Value: "#223748"
     - Name: VerticalLayout1
+      Id: g=d1592ca89a440636c065ee969674de88
       Type: ColumnLayout
       Children:
       - Name: Width
+        Id: g=924e57799d467d06031a3bcef97b4bb1
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 50.0
       - Name: Height
+        Id: g=326c8028eafc1cd7f4689c8bb48364cf
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 50.0
       - Name: HorizontalAlignment
+        Id: g=831fc6d64ab191f96a249d606c66548f
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
         Value: 3
       - Name: VerticalAlignment
+        Id: g=164be26bc1b70145c23b57fc28266d04
         Type: BaseVariableType
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 3
       - Name: Rectangle1
+        Id: g=f44d5a0bd462f1a12f6c8907267b4172
         Type: Rectangle
         Children:
         - Name: Width
+          Id: g=5dceed31a869cd29661fce9eb0e4665b
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 50.0
         - Name: Height
+          Id: g=88e39e8d373881c722e78992a8474633
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 50.0
         - Name: HorizontalAlignment
+          Id: g=1150225c270e90dbdfe7010cfc291328
           Type: BaseVariableType
           DataType: HorizontalAlignment
           ModellingRule: Optional
           Value: 3
         - Name: VerticalAlignment
+          Id: g=87b2e20db56828c2cbce9a755e94bcb0
           Type: BaseVariableType
           DataType: VerticalAlignment
           ModellingRule: Optional
         - Name: TopMargin
+          Id: g=0a7b189c6c59e32aa0350d5410be79af
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 5.0
         - Name: LeftMargin
+          Id: g=8915594ba6c363f382f7acb99371f401
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 5.0
         - Name: RightMargin
+          Id: g=64bba4b6c7116d2eda72617b03a34e8c
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 5.0
         - Name: FillColor
+          Id: g=25654da8f164f8b5048dd2e861e1b981
           Type: BaseDataVariableType
           DataType: Color
           ModellingRule: Optional
           Value: "#908f8f"
         - Name: Label1
+          Id: g=dd17f9bd20ec6e59c5dff5009785f66a
           Type: Label
           Children:
           - Name: Text
+            Id: g=8620522a32ca2fb855e0f619b801d7c4
             Type: BaseDataVariableType
             DataType: LocalizedText
             ModellingRule: Optional
             Value: {"LocaleId":"en-US","Text":"Gestion Energetica de Planta"}
           - Name: TextHorizontalAlignment
+            Id: g=b7a92c5894d8d2a4f8264e3bf16d2e4f
             Type: BaseVariableType
             DataType: TextHorizontalAlignment
             ModellingRule: Optional
             Value: 1
           - Name: TextVerticalAlignment
+            Id: g=d09667314c9fa76776afcd2436f8f3c8
             Type: BaseVariableType
             DataType: TextVerticalAlignment
             ModellingRule: Optional
             Value: 1
           - Name: FontSize
+            Id: g=53baf31de76af5be05479c2370b56401
             Type: BaseDataVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 50.0
           - Name: HorizontalAlignment
+            Id: g=c7adcc6a018674c40120515fa3b5dcee
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
             Value: 2
           - Name: VerticalAlignment
+            Id: g=5e8be96c32eec39dba270cb6c629cf20
             Type: BaseVariableType
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 2
           - Name: TextColor
+            Id: g=8026381cf30e7c5e9d338ce7c811f0d9
             Type: BaseDataVariableType
             DataType: Color
             ModellingRule: Optional
             Value: "#ffffff"
         - Name: BorderColor
+          Id: g=e84f6c45ab7da06603bce9a4ca15249e
           Type: BaseDataVariableType
           DataType: Color
           ModellingRule: Optional
           Value: "#223748"
       - Name: Label1
+        Id: g=e71e0a658def610a944e0bbde9cc50fc
         Type: Label
         Children:
         - Name: Text
+          Id: g=6ebeba5a6883d9eed03feb14cf9ad856
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
           Value: {"LocaleId":"en-US","Text":"MCCA y MCCB"}
         - Name: HorizontalAlignment
+          Id: g=b4119092f7d677809c31a11611042f95
           Type: BaseVariableType
           DataType: HorizontalAlignment
           ModellingRule: Optional
           Value: 2
         - Name: VerticalAlignment
+          Id: g=832c5ff25923dac2788ef1668ad9d66f
           Type: BaseVariableType
           DataType: VerticalAlignment
           ModellingRule: Optional
           Value: 2
         - Name: TextColor
+          Id: g=d7cd954734f6bba08906a46064242e99
           Type: BaseDataVariableType
           DataType: Color
           ModellingRule: Optional
           Value: "#ffffff"
         - Name: TextHorizontalAlignment
+          Id: g=087e7cd67005a3ac1a386e406c1a128b
           Type: BaseVariableType
           DataType: TextHorizontalAlignment
           ModellingRule: Optional
           Value: 1
         - Name: TextVerticalAlignment
+          Id: g=84aaf45cbc290cba4f018574ade5f9be
           Type: BaseVariableType
           DataType: TextVerticalAlignment
           ModellingRule: Optional
           Value: 1
         - Name: FontSize
+          Id: g=a32b80d5f9803f4746dd5709231278d4
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 40.0
         - Name: TopMargin
+          Id: g=8023bfd98aa8f1820826e5c20678a47c
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 5.0
       - Name: HorizontalLayout1
+        Id: g=cc8cbeb5a4d8268cceb9e783d4650938
         Type: RowLayout
         Children:
         - Name: Width
+          Id: g=841f437b19a18e7466171c0c43a8fd97
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 50.0
         - Name: Height
+          Id: g=0df0052f0b2db0df5a86a451f240e7f2
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 50.0
         - Name: VerticalAlignment
+          Id: g=d7c6c03477c7849e9058ba6c4d0a5c7c
           Type: BaseVariableType
           DataType: VerticalAlignment
           ModellingRule: Optional
           Value: 3
         - Name: HorizontalAlignment
+          Id: g=d14eba68d52c83d47665ae59fa51318e
           Type: BaseVariableType
           DataType: HorizontalAlignment
           ModellingRule: Optional
           Value: 3
         - Name: TopMargin
+          Id: g=c622240c9cb7c1c9a6e0016353684dcd
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
         - Name: LeftMargin
+          Id: g=1917e2cc83570b2da7c7c75cd95281d1
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 5.0
         - Name: RightMargin
+          Id: g=d99ac19d5dc3b040f518654eb34fd5dd
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 5.0
         - Name: BottomMargin
+          Id: g=a918b72b6cf2cac47223addb8c6ebdc1
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 10.0
         - Name: Rectangle1
+          Id: g=c9b54d7c0948083ae38bb80dce979996
           Type: Rectangle
           Children:
           - Name: Width
+            Id: g=1a974b0cd92aa183fed8766283a74a21
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 50.0
           - Name: Height
+            Id: g=d3557c01bb9b5c0fa90475a30055d71b
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 50.0
           - Name: HorizontalAlignment
+            Id: g=3eec5ed23b499d233f256aa450cdc17d
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
             Value: 3
           - Name: VerticalAlignment
+            Id: g=ebb21ecc08ac628477ba51b3568d7074
             Type: BaseVariableType
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 3
           - Name: FillColor
+            Id: g=c7073813996b13757c075c26622c4bc4
             Type: BaseDataVariableType
             DataType: Color
             ModellingRule: Optional
             Value: "#908f8f"
           - Name: BorderColor
+            Id: g=a797df00b5f38a87f82c5809033811e4
             Type: BaseDataVariableType
             DataType: Color
             ModellingRule: Optional
             Value: "#223748"
           - Name: RightMargin
+            Id: g=8ce5a9120d3f0a2249349da0b12d342b
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 5.0
           - Name: VerticalLayout1
+            Id: g=0bf936b094460b140b00c58af9163d57
             Type: ColumnLayout
             Children:
             - Name: Width
+              Id: g=50fa23891b232477b30bfd8af285436c
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
               Value: 50.0
             - Name: Height
+              Id: g=388a2e39b1098a53234b079cc0ed8802
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
               Value: 50.0
             - Name: HorizontalAlignment
+              Id: g=55a1126b67b814415326b0b28bb09556
               Type: BaseVariableType
               DataType: HorizontalAlignment
               ModellingRule: Optional
               Value: 3
             - Name: VerticalAlignment
+              Id: g=bc842f147d66be391e0f7c40d180a42b
               Type: BaseVariableType
               DataType: VerticalAlignment
               ModellingRule: Optional
               Value: 3
             - Name: Label1
+              Id: g=fe944229bef6b2598e0d5bac6c0aa52e
               Type: Label
               Children:
               - Name: Text
+                Id: g=d29d2404ca7b94cd903918a6079b4287
                 Type: BaseDataVariableType
                 DataType: LocalizedText
                 ModellingRule: Optional
                 Value: {"LocaleId":"en-US","Text":"Consumo Instantaneo (KW)"}
               - Name: TextHorizontalAlignment
+                Id: g=6c6e31a34e1bab7ee3dd14d6a5f03475
                 Type: BaseVariableType
                 DataType: TextHorizontalAlignment
                 ModellingRule: Optional
                 Value: 1
               - Name: TextVerticalAlignment
+                Id: g=06b12f192e88fd2794a1a68172bed4c7
                 Type: BaseVariableType
                 DataType: TextVerticalAlignment
                 ModellingRule: Optional
                 Value: 1
               - Name: HorizontalAlignment
+                Id: g=ffeebf93dd764598b8e12727d86eb5f6
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
                 Value: 2
               - Name: VerticalAlignment
+                Id: g=83e970af369dbc73d63c4a6871b6b5e7
                 Type: BaseVariableType
                 DataType: VerticalAlignment
                 ModellingRule: Optional
                 Value: 2
               - Name: TextColor
+                Id: g=d3e9de37cbe3299a625a135c42abb05b
                 Type: BaseDataVariableType
                 DataType: Color
                 ModellingRule: Optional
                 Value: "#ffffff"
               - Name: FontSize
+                Id: g=1bfda4a042977c9a70d5e44badc08b2c
                 Type: BaseDataVariableType
                 DataType: Size
                 ModellingRule: Optional
                 Value: 30.0
             - Name: HorizontalLayout1
+              Id: g=a58683848295ec5f074018ce3c8c3d33
               Type: RowLayout
               Children:
               - Name: Width
+                Id: g=de15da258f8f7bc25c2524e16e125303
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
                 Value: 50.0
               - Name: Height
+                Id: g=d217e2fc5a7c7f59cef11b5b18baf7a3
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
                 Value: 50.0
               - Name: HorizontalAlignment
+                Id: g=3c9a1d4d838608bd8ce5d1d4a1d861c3
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
                 Value: 3
               - Name: VerticalAlignment
+                Id: g=38096ee09521b07ec6463a0c15a031a7
                 Type: BaseVariableType
                 DataType: VerticalAlignment
                 ModellingRule: Optional
                 Value: 3
               - Name: CircularGauge1
+                Id: g=ee39b0f0b5c6be40b81847d251d87d15
                 Type: CircularGauge
                 Children:
                 - Name: Value
+                  Id: g=9962ab8ef19b12e2f20249d357fa9e73
                   Type: BaseDataVariableType
                   DataType: Float
                   Children:
                   - Name: ExpressionEvaluator1
+                    Id: g=32bb481a678e8c4a66fc8d70d16daf9f
                     Type: ExpressionEvaluator
                     Children:
                     - Name: Expression
+                      Id: g=6d19da807e4cc589e6b1544233e71bec
                       Type: BaseDataVariableType
                       DataType: String
                       ReferenceType: HasParameter
                       ModellingRule: Optional
                       Value: "({0}*{1}*(1.73205)*(0.87))/1000"
                     - Name: ns=2;Source0
+                      Id: g=4c4cf6266448f8a125b0b8f82e320b90
                       Type: BaseDataVariableType
                       DataType: BaseDataType
                       ReferenceType: HasSource
                       Children:
                       - Name: DynamicLink
+                        Id: g=a1ae3ad53bfce83098bc5484168d28a5
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "/Objects/DemoWebbinar_OPC/Model/Vp"
                     - Name: ns=2;Source1
+                      Id: g=2f40a0f7756bd2537fde730b34bbd1d9
                       Type: BaseDataVariableType
                       DataType: BaseDataType
                       ReferenceType: HasSource
                       Children:
                       - Name: DynamicLink
+                        Id: g=ae27736e8fe7de29450a3f962a28ca7e
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "/Objects/DemoWebbinar_OPC/Model/Cp"
                 - Name: MinValue
+                  Id: g=3f6978b7fccd4100d94d02d6ed342e0c
                   Type: BaseDataVariableType
                   DataType: Float
                 - Name: MaxValue
+                  Id: g=dd97f9bd2ffe78c46a684f4683f36ff3
                   Type: BaseDataVariableType
                   DataType: Float
                   Value: 100.0
                 - Name: WarningZones
+                  Id: g=1a189d283fa1bf87a6e30218f4fa5973
                   Type: BaseObjectType
                 - Name: Width
+                  Id: g=ff8f58dff8f784f15ca3b1c74dd42585
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: 210.0
                 - Name: Height
+                  Id: g=19cb40792d303c533d7ea2630f7a0090
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: 210.0
                 - Name: VerticalAlignment
+                  Id: g=d5dbe426e7a8fddd0dc5942eacd89669
                   Type: BaseVariableType
                   DataType: VerticalAlignment
                   ModellingRule: Optional
                   Value: 1
                 - Name: HorizontalAlignment
+                  Id: g=d183b593d138484d404e7574976b6545
                   Type: BaseVariableType
                   DataType: HorizontalAlignment
                   ModellingRule: Optional
                   Value: 3
                 - Name: LeftMargin
+                  Id: g=812870fb74bd6cc22a83b601c979fa3d
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: 50.0
                 - Name: RightMargin
+                  Id: g=98f9da16e6ff5c61ab8b8f3b17e5d314
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: -95.0
               - Name: TextBox1
+                Id: g=b4d058797ac892f59b112f2553b82b6c
                 Type: TextBox
                 Children:
                 - Name: Text
+                  Id: g=269169da8f847ee28f4723102b552253
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   Children:
                   - Name: ExpressionEvaluator1
+                    Id: g=9d0318120ab0a51034a38654d4039819
                     Type: ExpressionEvaluator
                     Children:
                     - Name: Expression
+                      Id: g=ad489a1b91ab18f403bc2b6002e97d29
                       Type: BaseDataVariableType
                       DataType: String
                       ReferenceType: HasParameter
                       ModellingRule: Optional
                       Value: "({0}*{1}*(1.73205)*(0.87))/1000"
                     - Name: ns=2;Source0
+                      Id: g=25ebfde09c1fb772c72e82a90798c512
                       Type: BaseDataVariableType
                       DataType: BaseDataType
                       ReferenceType: HasSource
                       Children:
                       - Name: DynamicLink
+                        Id: g=12ee8f10119ab954e19598d79872c768
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "/Objects/DemoWebbinar_OPC/Model/Vp"
                     - Name: ns=2;Source1
+                      Id: g=37a2a490d0fb6a8dbbab6bcd39e79897
                       Type: BaseDataVariableType
                       DataType: BaseDataType
                       ReferenceType: HasSource
                       Children:
                       - Name: DynamicLink
+                        Id: g=0c44c861d201ab3eb79b7f7b7a966fd6
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "/Objects/DemoWebbinar_OPC/Model/Cp"
                 - Name: Width
+                  Id: g=7a9845e2e0c07feeda0f924d4de42110
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: 110.0
                 - Name: VerticalAlignment
+                  Id: g=076a8a8ff4ffda237dd9d021ac80d492
                   Type: BaseVariableType
                   DataType: VerticalAlignment
                   ModellingRule: Optional
                   Value: 2
                 - Name: HorizontalAlignment
+                  Id: g=84c8cc287efaf9d578e93727158f61cc
                   Type: BaseVariableType
                   DataType: HorizontalAlignment
                   ModellingRule: Optional
                   Value: 3
                 - Name: LeftMargin
+                  Id: g=6e622a8294a51d4a7f1b932c761bcffe
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: 135.0
                 - Name: RightMargin
+                  Id: g=2f4fbac7ac9f6e9e7ead198aa66a824c
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: -85.0
                 - Name: TextHorizontalAlignment
+                  Id: g=e9eac8958072b35726e3e4e6abf1beeb
                   Type: BaseVariableType
                   DataType: TextHorizontalAlignment
                   ModellingRule: Optional
                   Value: 1
                 - Name: TextVerticalAlignment
+                  Id: g=f214c01d07b397e59e75a797456aacfe
                   Type: BaseVariableType
                   DataType: TextVerticalAlignment
                   ModellingRule: Optional
                   Value: 1
                 - Name: TextColor
+                  Id: g=46918c93b7f280e0145f8f03847fe05e
                   Type: BaseDataVariableType
                   DataType: Color
                   ModellingRule: Optional
                   Value: "#ffffff"
                 - Name: FontFamily
+                  Id: g=fc46e37d47a484e16b2e9534ad75f6cb
                   Type: BaseDataVariableType
                   DataType: Font
                   ModellingRule: Optional
                 - Name: FontSize
+                  Id: g=be8b9c0161b8a30dec80054f3d2393f2
                   Type: BaseDataVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: 30.0
               - Name: Label1
+                Id: g=a5f11ba46c3f2c20650a864bc1b6cd8d
                 Type: Label
                 Children:
                 - Name: Text
+                  Id: g=bb04af0702df080bc1050a07919bdd3b
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
                   Value: {"LocaleId":"en-US","Text":"Kw"}
                 - Name: HorizontalAlignment
+                  Id: g=57f61870cf37f93f5b959797b588c4d1
                   Type: BaseVariableType
                   DataType: HorizontalAlignment
                   ModellingRule: Optional
                   Value: 3
                 - Name: VerticalAlignment
+                  Id: g=a317944c6e7410cb42418274331489f3
                   Type: BaseVariableType
                   DataType: VerticalAlignment
                   ModellingRule: Optional
                   Value: 2
                 - Name: TextHorizontalAlignment
+                  Id: g=b30100bc3260f6830df8af535e5ec49e
                   Type: BaseVariableType
                   DataType: TextHorizontalAlignment
                   ModellingRule: Optional
                   Value: 1
                 - Name: TextVerticalAlignment
+                  Id: g=dcd5e434f7b662e81ded2ee5700b6608
                   Type: BaseVariableType
                   DataType: TextVerticalAlignment
                   ModellingRule: Optional
                   Value: 1
                 - Name: LeftMargin
+                  Id: g=78aaac82244a6ecfecd054a97ae04942
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: 95.0
                 - Name: TextColor
+                  Id: g=a6729796dde2492fb6b1221ccfe0590b
                   Type: BaseDataVariableType
                   DataType: Color
                   ModellingRule: Optional
                   Value: "#ffffff"
                 - Name: FontSize
+                  Id: g=0b6628818b3ee85b63cfdc2aff7fe33e
                   Type: BaseDataVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: 30.0
             - Name: Label2
+              Id: g=72a64d8801eb7c6df810339662b91b59
               Type: Label
               Children:
               - Name: Text
+                Id: g=dc8ca199ff0ada7df73c25701b85b74b
                 Type: BaseDataVariableType
                 DataType: LocalizedText
                 ModellingRule: Optional
                 Value: {"LocaleId":"en-US","Text":"Label2"}
               - Name: FontSize
+                Id: g=0e773edf51ee37615965d942a6697d8b
                 Type: BaseDataVariableType
                 DataType: Size
                 ModellingRule: Optional
                 Value: 30.0
               - Name: TextHorizontalAlignment
+                Id: g=626b85f67a1d646bbd57cd62e8b23e5e
                 Type: BaseVariableType
                 DataType: TextHorizontalAlignment
                 ModellingRule: Optional
                 Value: 1
               - Name: TextVerticalAlignment
+                Id: g=76bf2396860b233b949e214a07763487
                 Type: BaseVariableType
                 DataType: TextVerticalAlignment
                 ModellingRule: Optional
                 Value: 1
               - Name: HorizontalAlignment
+                Id: g=55e98f507dba115e86c69fcb9b658de4
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
                 Value: 2
               - Name: VerticalAlignment
+                Id: g=7a3611c5f88994394f665c84bee90234
                 Type: BaseVariableType
                 DataType: VerticalAlignment
                 ModellingRule: Optional
                 Value: 2
               - Name: TextColor
+                Id: g=5b127046b88376416c13bc89cac0181f
                 Type: BaseDataVariableType
                 DataType: Color
                 ModellingRule: Optional
                 Value: "#ffffff"
         - Name: Rectangle2
+          Id: g=3015891a5c906b1fd8dbf2c4ff5dc35d
           Type: Rectangle
           Children:
           - Name: Width
+            Id: g=e2b344a6e6d4fcd78be43fdbd7499bc0
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 50.0
           - Name: Height
+            Id: g=42f814ceeb31f75e7e92710a73981022
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 50.0
           - Name: HorizontalAlignment
+            Id: g=66d56bed1ea88aa0fe1c81d6733919c7
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
             Value: 3
           - Name: VerticalAlignment
+            Id: g=b70927a88728bbe80c8a120f679c8846
             Type: BaseVariableType
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 3
           - Name: FillColor
+            Id: g=7d60a7b92e247a7ba4e8a1e5354316aa
             Type: BaseDataVariableType
             DataType: Color
             ModellingRule: Optional
             Value: "#908f8f"
           - Name: BorderColor
+            Id: g=b6818bbfe59590b373c4787ddfc3c8e9
             Type: BaseDataVariableType
             DataType: Color
             ModellingRule: Optional
             Value: "#223748"
           - Name: LeftMargin
+            Id: g=0e6eda342a321e115e2a564d6dc836df
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 5.0
       - Name: HorizontalLayout2
+        Id: g=fcbd68c0ae06738ef3b17039c9993757
         Type: RowLayout
         Children:
         - Name: Width
+          Id: g=402b4295e3f2c27130639801b7701c8e
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 50.0
         - Name: Height
+          Id: g=327c7b5776eaa9e34273c4805ed7cc60
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 50.0
         - Name: HorizontalAlignment
+          Id: g=41bbcb54d2180eecc9df06bea631f39d
           Type: BaseVariableType
           DataType: HorizontalAlignment
           ModellingRule: Optional
           Value: 3
         - Name: VerticalAlignment
+          Id: g=d7367971f4a82abe8c3bed1d6c568e08
           Type: BaseVariableType
           DataType: VerticalAlignment
           ModellingRule: Optional
           Value: 3
         - Name: LeftMargin
+          Id: g=b01d91570c991c5c061b8c6f16ef7039
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 5.0
         - Name: RightMargin
+          Id: g=4f5316f48461e65f176d43596f101b68
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 5.0
         - Name: BottomMargin
+          Id: g=d0f6aafdb34a642dd96cf98ebf27f078
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 5.0
         - Name: TopMargin
+          Id: g=c12880801616d193b3fa702c6d86c586
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional

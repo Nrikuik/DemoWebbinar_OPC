@@ -289,6 +289,7 @@ Children:
       }
      }
 - Name: DataLogger1
+  Id: g=7d843e7c43bb3037e90e871082fff62f
   Type: DataLogger
   Children:
   - Name: SamplingMode
@@ -307,31 +308,6 @@ Children:
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
-    - Name: Estado
-      Type: VariableToLog
-      DataType: BaseDataType
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../Model/Instances/Bomba1/Estado"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
     - Name: Corriente
       Type: VariableToLog
       DataType: BaseDataType
@@ -377,81 +353,6 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/Instances/Bomba1/Voltaje"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
-    - Name: Potencia_Activa
-      Type: VariableToLog
-      DataType: BaseDataType
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../Model/Instances/Bomba1/Potencia_Activa"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
-    - Name: Energia_Acumulada
-      Type: VariableToLog
-      DataType: BaseDataType
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../Model/Instances/Bomba1/Energia_Acumulada"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
-    - Name: Estado1
-      Type: VariableToLog
-      DataType: BaseDataType
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../Model/Instances/Ventilador1/Estado"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -507,7 +408,7 @@ Children:
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
-    - Name: Potencia_Activa1
+    - Name: Corriente2
       Type: VariableToLog
       DataType: BaseDataType
       Children:
@@ -526,13 +427,13 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Instances/Ventilador1/Potencia_Activa"
+        Value: "../../../../Model/Instances/Bomba2/Corriente"
         Children:
         - Name: Mode
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
-    - Name: Energia_Acumulada1
+    - Name: Voltaje2
       Type: VariableToLog
       DataType: BaseDataType
       Children:
@@ -551,7 +452,57 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Instances/Ventilador1/Energia_Acumulada"
+        Value: "../../../../Model/Instances/Bomba2/Voltaje"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Corriente3
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Instances/Ventilador2/Corriente"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Voltaje3
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Instances/Ventilador2/Voltaje"
         Children:
         - Name: Mode
           Type: BaseVariableType

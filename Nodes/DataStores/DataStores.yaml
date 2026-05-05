@@ -32,34 +32,28 @@ Children:
         - Name: LocalTimestamp
           Type: StoreColumn
           DataType: DateTime
-        - Name: Estado
-          Type: StoreColumn
-          DataType: Boolean
         - Name: Corriente
           Type: StoreColumn
           DataType: Float
         - Name: Voltaje
           Type: StoreColumn
           DataType: Float
-        - Name: Potencia_Activa
-          Type: StoreColumn
-          DataType: Float
-        - Name: Energia_Acumulada
-          Type: StoreColumn
-          DataType: Float
-        - Name: Estado1
-          Type: StoreColumn
-          DataType: Boolean
         - Name: Corriente1
           Type: StoreColumn
           DataType: Float
         - Name: Voltaje1
           Type: StoreColumn
           DataType: Float
-        - Name: Potencia_Activa1
+        - Name: Corriente2
           Type: StoreColumn
           DataType: Float
-        - Name: Energia_Acumulada1
+        - Name: Voltaje2
+          Type: StoreColumn
+          DataType: Float
+        - Name: Corriente3
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltaje3
           Type: StoreColumn
           DataType: Float
   - Class: Reference
