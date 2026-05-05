@@ -1,2 +1,11 @@
 Name: NetLogic
 Type: NetLogicCategoryFolder
+Children:
+- Name: CalculoEnergia
+  Type: NetLogic
+- Name: Consumo_Acumulado
+  Type: BaseDataVariableType
+  DataType: Double
+- Name: Consumo_Acumulado1
+  Type: BaseDataVariableType
+  DataType: Double

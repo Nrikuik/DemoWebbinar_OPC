@@ -256,6 +256,15 @@ Children:
                       DataType: Size
                       ModellingRule: Optional
                       Value: 20.0
+                    - Name: Enabled
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Estado"
                   - Name: TextBox2
                     Type: TextBox
                     Children:
@@ -308,6 +317,15 @@ Children:
                       DataType: Size
                       ModellingRule: Optional
                       Value: 20.0
+                    - Name: Enabled
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Estado"
                   - Name: TextBox3
                     Type: TextBox
                     Children:
@@ -360,6 +378,24 @@ Children:
                       DataType: Size
                       ModellingRule: Optional
                       Value: 20.0
+                    - Name: ContentType
+                      Type: BaseVariableType
+                      DataType: InputTypeEnum
+                      ModellingRule: Optional
+                    - Name: Visible
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ModellingRule: Optional
+                      Value: true
+                    - Name: Enabled
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Estado"
                   - Name: TextBox4
                     Type: TextBox
                     Children:
@@ -412,6 +448,15 @@ Children:
                       DataType: Size
                       ModellingRule: Optional
                       Value: 20.0
+                    - Name: Enabled
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Estado"
                   - Name: Switch1
                     Type: Switch
                     Children:
@@ -1304,6 +1349,15 @@ Children:
                       DataType: Size
                       ModellingRule: Optional
                       Value: 20.0
+                    - Name: Enabled
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador1/Estado"
                   - Name: TextBox2
                     Type: TextBox
                     Children:
@@ -1356,6 +1410,15 @@ Children:
                       DataType: Size
                       ModellingRule: Optional
                       Value: 20.0
+                    - Name: Enabled
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador1/Estado"
                   - Name: TextBox3
                     Type: TextBox
                     Children:
@@ -1408,6 +1471,15 @@ Children:
                       DataType: Size
                       ModellingRule: Optional
                       Value: 20.0
+                    - Name: Enabled
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador1/Estado"
                   - Name: TextBox4
                     Type: TextBox
                     Children:
@@ -1460,6 +1532,15 @@ Children:
                       DataType: Size
                       ModellingRule: Optional
                       Value: 20.0
+                    - Name: Enabled
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador1/Estado"
                   - Name: Switch1
                     Type: Switch
                     Children:

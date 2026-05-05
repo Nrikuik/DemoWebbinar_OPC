@@ -703,6 +703,15 @@ Children:
     Children:
     - Name: Default
       Type: InputBoxStyle
+      Children:
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#908f8f"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
   - Name: SwitchStyles
     Type: BaseObjectType
     Children:
