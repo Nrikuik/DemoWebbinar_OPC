@@ -225,6 +225,17 @@ Children:
           - Name: Value
             Type: BaseDataVariableType
             DataType: Float
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Voltaje"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -282,6 +293,17 @@ Children:
           - Name: Value
             Type: BaseDataVariableType
             DataType: Float
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Corriente"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -460,6 +482,17 @@ Children:
           - Name: Value
             Type: BaseDataVariableType
             DataType: Float
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador1/Voltaje"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -513,6 +546,17 @@ Children:
           - Name: Value
             Type: BaseDataVariableType
             DataType: Float
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador1/Corriente"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -691,6 +735,17 @@ Children:
           - Name: Value
             Type: BaseDataVariableType
             DataType: Float
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba2/Voltaje"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -719,7 +774,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: -16.0
+            Value: -11.0
         - Name: Label7
           Type: Label
           Children:
@@ -744,6 +799,17 @@ Children:
           - Name: Value
             Type: BaseDataVariableType
             DataType: Float
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba2/Corriente"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -922,6 +988,17 @@ Children:
           - Name: Value
             Type: BaseDataVariableType
             DataType: Float
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador2/Voltaje"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -975,6 +1052,17 @@ Children:
           - Name: Value
             Type: BaseDataVariableType
             DataType: Float
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Ventilador2/Corriente"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
