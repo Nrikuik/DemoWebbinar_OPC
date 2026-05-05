@@ -8,10 +8,43 @@ Children:
   DataType: Boolean
 - File: Instances/Instances.yaml
 - File: Types/Types.yaml
-- Name: CIKW
+- Name: Consumo_Instantaneo
   Id: g=9624e341ed6058533b4c127b86321f4a
   Type: BaseDataVariableType
-  DataType: Float
+  DataType: Double
+  Children:
+  - Name: ExpressionEvaluator1
+    Id: g=966ecc2a9544c2ae49777e64d3f2b19f
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Id: g=0ecda84cce452a9a60585329a350b440
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "({0}*{1}*(1.73205)*(0.87))/1000"
+    - Name: ns=2;Source0
+      Id: g=5198e6cd36d2f67bd6a32c3b2345acdd
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=6f732b7186bfff9c3856fcefa6691ef9
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Vp"
+    - Name: ns=2;Source1
+      Id: g=3597c44a2d04c1998739201a1bd0eb61
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=d39a07a09b10cf8350b1a8ac8f96e9a7
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Cp"
 - Name: Vp
   Id: g=0e6e786d3a20fe6b911998eeb658266d
   Type: BaseDataVariableType
@@ -248,3 +281,11 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../Instances/Ventilador2/Energia_Acumulada"
+- Name: Consumo_Acumulado
+  Id: g=948d0b4f8dcd27c2e5ee7f0198bd325f
+  Type: BaseDataVariableType
+  DataType: Double
+- Name: Demanda_Maxima
+  Id: g=f4bbbba6bfbae1b3fd16d49ff52370cd
+  Type: BaseDataVariableType
+  DataType: Double
