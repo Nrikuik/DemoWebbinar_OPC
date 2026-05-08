@@ -82,3 +82,15 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     AccessLevel: Read
+  - Name: MaxNumberOfConnections
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 2
+  - Name: ServerCertificateFile
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "ns=7;%PROJECTDIR%/PKI/Own/Certs/optixhmi_cert1.der"
+  - Name: ServerPrivateKeyFile
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "ns=7;%PROJECTDIR%/PKI/Own/Certs/optixhmi_cert1.pem"

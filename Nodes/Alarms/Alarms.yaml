@@ -1,3 +1,596 @@
 Name: Alarms
 Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
+Children:
+- Name: ExclusiveLevelAlarm1
+  Id: g=7e961576d58cd7a0d862059bf896bb1d
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=4c305e9096ae18f084dfd1c2a7d94141
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=42595443e8db25846d985598159988c6
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Instances/Bomba1/Corriente"
+      Children:
+      - Name: Mode
+        Id: g=53699addf4aca9511cba224e07b9014a
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=7bfa4a6b93045e35723d11eb99d51e97
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: MaxTimeShelved
+    Id: g=77fe0ef195e329e4d01559f007f24bdb
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:00.1000000"
+  - Name: HighLimit
+    Id: g=f5bb780b8860316d440c02bc11ca1c54
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 60.0
+  - Name: LowLimit
+    Id: g=135ec38d6ce62f368dec75eb1c2d5b02
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 20.0
+- Name: ExclusiveLevelAlarm2
+  Id: g=8be5ab4af35b2cf763d04251a5ea27f4
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=79d3668feaf2a39736593c476208cef1
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=d47ca9cdeaa87dcf3817972887b85fa1
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Instances/Bomba1/Voltaje"
+      Children:
+      - Name: Mode
+        Id: g=6edd82263eaa55d49f6f3b198d4a9ba2
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=1b0a7eaae59640d66d4a9866567c54e1
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: MaxTimeShelved
+    Id: g=dc02adb6cfb148b44f8fb6a2952135f3
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:00.1000000"
+  - Name: HighLimit
+    Id: g=0581621f4cf72fe1fd3d4b831ee1f24a
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 60.0
+  - Name: LowLimit
+    Id: g=0a6bd2a522525154be2e6b4831f21fbc
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 20.0
+- Name: ExclusiveLevelAlarm3
+  Id: g=6d8c2aaba7dcbb7e8e501928d46c6e0b
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=bba3d884deea4edfc5e86bd291526d66
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=e69e8f89a637f1f4b6579e287a6cfb5e
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Instances/Ventilador1/Corriente"
+      Children:
+      - Name: Mode
+        Id: g=009c3c9c5f38ffb6e9ea778e17b1c7e6
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=49f5258fc3e1b990a11e13fa6c4350e4
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: MaxTimeShelved
+    Id: g=51c94638015610d942650a5f0d3ec5ac
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:00.1000000"
+  - Name: HighLimit
+    Id: g=97b9a9605a9936cfe27b96067a28ddae
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 60.0
+  - Name: LowLimit
+    Id: g=501682825cdb879881fd817f2874e04a
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 20.0
+- Name: ExclusiveLevelAlarm4
+  Id: g=7657afb05c966850fd069af7eafc27a8
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=95a3c78c35026f72514f52a795fd0d74
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=81d5f7e5a5ef1c1557e11fe2694eee05
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Instances/Ventilador1/Voltaje"
+      Children:
+      - Name: Mode
+        Id: g=9c27e8c153ba05d6cea64b662a059e5a
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=7723c67dd0b26ce81fc3219603aa5c9e
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: MaxTimeShelved
+    Id: g=e7b30bca072c13be55c0406fdac0455d
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:00.1000000"
+  - Name: HighLimit
+    Id: g=5802aca5230f030c24ec289e012338fe
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 60.0
+  - Name: LowLimit
+    Id: g=c8817de075d6111bfde6b358ab80b38d
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 20.0
+- Name: ExclusiveLevelAlarm5
+  Id: g=03f293c4b1f354193ebf82c13c2ea615
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=6c48bbe8320f1a4ef3a5b1ee20b4a310
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=c44c488d1a9bdbf1451baa733029a0b6
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Instances/Bomba2/Corriente"
+      Children:
+      - Name: Mode
+        Id: g=995e08a7c52eacf54b8dc2b7c324c8af
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=346a43852c6f862f6f093980eacabd1f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: MaxTimeShelved
+    Id: g=84034c8544d333d14df9840118d9f7f9
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:00.1000000"
+  - Name: HighLimit
+    Id: g=8a3257751aa4e126a18b6c18a3369b2d
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 60.0
+  - Name: LowLimit
+    Id: g=bfcb0dba9acf58878834ebdb1fb7bebf
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 20.0
+- Name: ExclusiveLevelAlarm6
+  Id: g=85453dc832bc627dc4da5394a2a17412
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=ca12ca0746bd8d592f515b653ee86052
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=73fbc982cfafe0ff487f1dcdf07b13dd
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Instances/Bomba2/Voltaje"
+      Children:
+      - Name: Mode
+        Id: g=73fed4af120e3dd68787faa249db47a8
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=1faa1becd29d14c59bd40561f0ad56d3
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: MaxTimeShelved
+    Id: g=3ef4ddbada3e2f931eb84cf986919c5c
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:00.1000000"
+  - Name: HighLimit
+    Id: g=22c2ac8463755760e9dd93dd7a90da2e
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 60.0
+  - Name: LowLimit
+    Id: g=46973448b4385829193b8ef06c186c77
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 20.0
+- Name: ExclusiveLevelAlarm7
+  Id: g=29993a6f473853a6455f48e50acfd20d
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=9479bc7d68706f8282fdb481e3caa669
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=c0e5ac5207d25336f08ad9ec6734f88b
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Instances/Ventilador2/Corriente"
+      Children:
+      - Name: Mode
+        Id: g=4be0e449c6027bdbcac14db4d541e0d6
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=081be31afd802953ed7691c3f383c9d6
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: MaxTimeShelved
+    Id: g=9183d3e445a7ce490424184bbb081efb
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:00.1000000"
+  - Name: HighLimit
+    Id: g=f9705ff5a3c6f4d93a58f6d4c946d40f
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 60.0
+  - Name: LowLimit
+    Id: g=783c80e9880ae9e86af296a056bbfe5d
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 20.0
+- Name: ExclusiveLevelAlarm8
+  Id: g=9042a3c0193796ac5112e057c0bd7a50
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=0e53eb095be3b0f1036eda525e5d7056
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=c8dd6b42c0137fbe4a9e2578f8b9d653
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Instances/Ventilador2/Voltaje"
+      Children:
+      - Name: Mode
+        Id: g=e8500af53ecb40df2a7e114fce7b1b83
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=8f55be41f275e1941013c6c9bab5f69b
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: MaxTimeShelved
+    Id: g=f45d25aeb0835e8c4e34cbf696cc4e1e
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:00.1000000"
+  - Name: HighLimit
+    Id: g=d10e7ba3f300a8e0740fefab089ec40b
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 60.0
+  - Name: LowLimit
+    Id: g=f5f2b3a9429b16a46a029689b9fbf735
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 20.0

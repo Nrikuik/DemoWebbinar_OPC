@@ -1482,7 +1482,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 30.0
+          Value: 40.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
@@ -2426,6 +2426,7 @@ Children:
         - Name: AlarmsEventLogger
           Type: Alias
           DataType: NodeId
+          Value: "/Objects/DemoWebbinar_OPC/Loggers/AlarmsEventLogger1"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -3043,6 +3044,7 @@ Children:
         - Name: AlarmEventsLogger
           Type: Alias
           DataType: NodeId
+          Value: "/Objects/DemoWebbinar_OPC/Loggers/AlarmsEventLogger1"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -3091,6 +3093,15 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 20.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 5.0
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
 - Name: GestionEnergetica
   Id: g=cf6ecd005f0a808312147186c0c36675
   Supertype: Screen
