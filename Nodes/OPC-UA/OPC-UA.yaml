@@ -85,7 +85,7 @@ Children:
   - Name: MaxNumberOfConnections
     Type: BaseDataVariableType
     DataType: UInt32
-    Value: 2
+    Value: 1
   - Name: ServerCertificateFile
     Type: PropertyType
     DataType: ResourceUri
@@ -94,3 +94,7 @@ Children:
     Type: PropertyType
     DataType: ResourceUri
     Value: "ns=7;%PROJECTDIR%/PKI/Own/Certs/optixhmi_cert1.pem"
+  - Name: MaxSubscriptionsPerSession
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 10

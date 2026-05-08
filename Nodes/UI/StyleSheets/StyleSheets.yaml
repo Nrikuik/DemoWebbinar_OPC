@@ -580,6 +580,11 @@ Children:
     Children:
     - Name: Default
       Type: ButtonStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#000000"
     - Name: Accent
       Type: ButtonStyle
       Children:
@@ -750,6 +755,19 @@ Children:
     Children:
     - Name: Default
       Type: ChartStyle
+      Children:
+      - Name: GridColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#000000"
+      - Name: AxisColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
   - Name: DataListStyles
     Type: BaseObjectType
     Children:
@@ -764,6 +782,11 @@ Children:
     Children:
     - Name: Default
       Type: ToolTipStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#000000"
   - Name: ScrollBarStyles
     Type: BaseObjectType
     Children:
@@ -838,6 +861,10 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+  - Name: TextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
 - Name: MaterialDark1
   Type: StyleSheet
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
