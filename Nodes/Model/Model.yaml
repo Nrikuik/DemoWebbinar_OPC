@@ -184,44 +184,172 @@ Children:
       DataType: BaseDataType
       ReferenceType: HasSource
       Children:
-      - Name: DynamicLink
-        Id: g=b2e52e9dc6568e6ca7a17f1694c87f4b
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../Instances/Bomba1/Potencia_Activa"
+      - Name: ConditionalConverter1
+        Id: g=666509d1628b760daa63b30dc43457c5
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Id: g=2e06b28257a1e8dd39845188230d258f
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=b2e52e9dc6568e6ca7a17f1694c87f4b
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../Instances/Bomba1/Estado"
+        - Name: TrueValue
+          Id: g=5deaba457b95ceb979b212d521c378b0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasParameter
+          Children:
+          - Name: DynamicLink
+            Id: g=3e6f6e930681cb8b2e6f8f5e17311d4c
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../Instances/Bomba1/Potencia_Activa"
+        - Name: FalseValue
+          Id: g=789366d6db96ae5101402a02d16e81b7
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasParameter
+          Children:
+          - Name: DynamicLink
+            Id: g=e4583c36388f6c10df05e4e31a330490
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../CeroFloat"
     - Name: ns=2;Source1
       Id: g=865a2351ee7565abbfddc2c67afe1ccf
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
       Children:
-      - Name: DynamicLink
-        Id: g=6ddd74757aa64336e94441c48ee96af7
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../Instances/Bomba2/Potencia_Activa"
+      - Name: ConditionalConverter1
+        Id: g=ed64654fdcea327abfa137853ff215e0
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Id: g=3e2588a9c3049ed000994bf1a27c044b
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=6ddd74757aa64336e94441c48ee96af7
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../Instances/Bomba2/Estado"
+        - Name: TrueValue
+          Id: g=f4100cd265a1c6d4d0c53e82145f9a9f
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasParameter
+          Children:
+          - Name: DynamicLink
+            Id: g=96368b875be03d2ebcb19b90c58c0654
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../Instances/Bomba2/Potencia_Activa"
+        - Name: FalseValue
+          Id: g=2d4d9dc7448fb6ac21277717981e73a2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasParameter
+          Children:
+          - Name: DynamicLink
+            Id: g=39e6e1dfc4c9faa3d5588b9e8c0b6d38
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../CeroFloat"
     - Name: ns=2;Source2
       Id: g=1911e47d3e0bdfd3c645edc3d69ee7f8
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
       Children:
-      - Name: DynamicLink
-        Id: g=accb1ab31976a7dc6624e7fd925cbb59
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../Instances/Ventilador1/Potencia_Activa"
+      - Name: ConditionalConverter1
+        Id: g=8e4e18939ceeaa4dc7e2ad6228426a1e
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Id: g=082b4a612df9141dbde9a0c368e0d448
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=accb1ab31976a7dc6624e7fd925cbb59
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../Instances/Ventilador1/Estado"
+        - Name: TrueValue
+          Id: g=d0b27fb18296b52957fb992fc258d6ca
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasParameter
+          Children:
+          - Name: DynamicLink
+            Id: g=0fe367ffb27bc8681c968fcee87d3f75
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../Instances/Ventilador1/Potencia_Activa"
+        - Name: FalseValue
+          Id: g=23f815fa0fcd6fad3648d7b858ccfb62
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasParameter
+          Children:
+          - Name: DynamicLink
+            Id: g=3a5d2c6ae75d219def5f97921259134d
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../CeroFloat"
     - Name: ns=2;Source3
       Id: g=b56caaef28387d1b0779217111dcb20b
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
       Children:
-      - Name: DynamicLink
-        Id: g=b4dada42c2eceed9901222043b730772
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../Instances/Ventilador2/Potencia_Activa"
+      - Name: ConditionalConverter1
+        Id: g=308f383a0ff7b8ccd5f5288088c55643
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Id: g=a5f486763eb7d302c87f96a3812be888
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=b4dada42c2eceed9901222043b730772
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../Instances/Ventilador2/Estado"
+        - Name: TrueValue
+          Id: g=20ab0a91a367bfdc4dc70ff4bc9509ac
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasParameter
+          Children:
+          - Name: DynamicLink
+            Id: g=c1083f300291807c04ea1af792058ac9
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../Instances/Ventilador2/Potencia_Activa"
+        - Name: FalseValue
+          Id: g=8a4377fe56adc5c13122ad7ad44ddca7
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasParameter
+          Children:
+          - Name: DynamicLink
+            Id: g=f1cfae40be9badbe44c3a90ff7ceeeb2
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../CeroFloat"
 - Name: EAp
   Id: g=fe9e3bffea18c606c3f0e288944782af
   Type: BaseDataVariableType
@@ -289,3 +417,7 @@ Children:
   Id: g=f4bbbba6bfbae1b3fd16d49ff52370cd
   Type: BaseDataVariableType
   DataType: Double
+- Name: CeroFloat
+  Id: g=ee73c675d038a552eeb6d91ee283d13d
+  Type: BaseDataVariableType
+  DataType: Float

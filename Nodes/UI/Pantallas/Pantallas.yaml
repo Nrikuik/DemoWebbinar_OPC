@@ -4296,127 +4296,168 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: -4.0
-        - Name: XYChart1
-          Id: g=e51d56cddbeb1e2df68af17a5628d09a
-          Type: XYChart
+        - Name: Trend1
+          Id: g=bb7fce1bfa08d2063b452378c27cce90
+          Type: Trend
           Children:
           - Name: Pens
-            Id: g=372436cdf90eb70ac3903e15a6af36bc
+            Id: g=4f893162babaaccb4709536bcb8ba965
             Type: BaseObjectType
             Children:
-            - Name: Potencia Activa
-              Id: g=e235376dd0ec29efdae9d40c9a8c5c54
-              Type: XYChartScalarLinePen
+            - Name: TrendPen1
+              Id: g=035ab8c095ca1d54f1e86cc78d6e034c
+              Type: TrendPen
+              DataType: BaseDataType
               Children:
-              - Name: X
-                Id: g=9e2165f20937fabecf86c28c032dff3b
+              - Name: Thickness
+                Id: g=bd8f794ee47dc399dd2d79c198a4dd72
                 Type: BaseDataVariableType
-                DataType: Number
-                Value: {"Type":11,"Body":0.0}
-                Children:
-                - Name: DynamicLink
-                  Id: g=f964f34bae3c5dcb0e301cba2ae0a561
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Estado"
-              - Name: Y
-                Id: g=1f7c74126a2475d31817be4d47b506c6
+                DataType: Size
+                Value: -1.0
+              - Name: Enabled
+                Id: g=f74f7d2e44008e2fc01a47291e7e820a
                 Type: BaseDataVariableType
-                DataType: Number
-                Value: {"Type":11,"Body":0.0}
+                DataType: Boolean
+                Value: true
+              - Name: Thresholds
+                Id: g=7e37ccc3b63280ff8e7974d96fb53c18
+                Type: BaseObjectType
+              - Name: DynamicLink
+                Id: g=c2385b533739de1079a8e543946e6e1d
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/DemoWebbinar_OPC/Model/PAp"
                 Children:
-                - Name: DynamicLink
-                  Id: g=105142943110b44e6238a030a0121bdd
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Potencia_Activa"
+                - Name: Mode
+                  Id: g=2c00a906b39227374231118771f9e62d
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
               - Name: Color
-                Id: g=27b782b06a581f0dfc82efb9cd2a7ea4
+                Id: g=075925f8049101c4556cfd480a34017b
                 Type: BaseDataVariableType
                 DataType: Color
                 ModellingRule: Optional
-                Value: "#0fafff"
-              - Name: Thickness
-                Id: g=5ccdee787c3b90772dad5ce11b6f85ba
-                Type: BaseDataVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 3.0
-            - Name: ArrayLinePen1
-              Id: g=efca0dc78159c4bad6f725212a982592
-              Type: XYChartArrayLinePen
-              Children:
-              - Name: PointArray
-                Id: g=fed3853e87dd796e1c1577ad87ad507f
-                Type: BaseDataVariableType
-                DataType: Number
-                ValueRank: 2
-                ArrayDimensions: [0,0]
-                Value: {"Type":11,"Dimensions":[0,0],"Body":[]}
-                Children:
-                - Name: DynamicLink
-                  Id: g=ad05901c4e6f587c326d6d0f5e734445
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Potencia_Activa"
+                Value: "#f8e71c"
+          - Class: Reference
+            Target: ns=3;i=1129
+            Direction: Forward
+          - Name: XAxis
+            Id: g=8833d5cff3fefeb7d8ff554b28f169c4
+            Type: DateTimeAxis
+            Children:
+            - Name: Follow
+              Id: g=6e0bdfa762c73c7d9ff7146306946273
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Window
+              Id: g=0f3c1d8f7b21348c8da723b3226915a7
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:05.0000000"
+            - Name: Interactive
+              Id: g=b685a9443ed2eee7f83a856d5ea13933
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Time
+              Id: g=bd50ff3a2fd97069baa350d0619a278a
+              Type: BaseDataVariableType
+              DataType: DateTime
+          - Name: YAxis
+            Id: g=09e46ea5ed8e605372383c34b75063ef
+            Type: ValueAxis
+            Children:
+            - Name: Position
+              Id: g=c428be49e10605283f27fb8af544e49a
+              Type: BaseDataVariableType
+              DataType: HorizontalPositionEnum
+            - Name: MinValue
+              Id: g=518ed1882e5bc77fb4d296a1a576c42e
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -100.0
+            - Name: MaxValue
+              Id: g=70fddb11dfacb16c03bb4bf21da86105
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: 100.0
+            - Name: AutoScale
+              Id: g=de5e262c116779b9aee99c93d04366ea
+              Type: BaseDataVariableType
+              DataType: Boolean
+            - Name: Interactive
+              Id: g=38d499ddcd0251aceb446a70a1add340
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
           - Name: LegendVisible
-            Id: g=8477cd588ce1b31d3ea9e5eed8096487
+            Id: g=60e471c226d716953e7bda84420e21b5
             Type: BaseDataVariableType
             DataType: Boolean
             Value: true
           - Class: Reference
-            Target: ns=3;i=573
+            Target: ns=3;i=1201
+            Direction: Forward
+          - Name: TimeRanges
+            Id: g=1a32079cdf7e1e1d63f644243bf79491
+            Type: BaseObjectType
+          - Class: Reference
+            Target: ns=3;i=1209
             Direction: Forward
           - Name: Width
-            Id: g=e45cd12bbc7181f5ae89c552fe559872
+            Id: g=f8488e2068f8023a0e491ce154049bfb
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 400.0
           - Name: Height
-            Id: g=7495fd8717e86ece75a9f45a2df21fac
+            Id: g=826f47496f1f8f09e91dd40086b5a5cc
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 400.0
+          - Name: ReferenceTimeZone
+            Id: g=b09d18092e4ddf241f3a0ba9aaf69b20
+            Type: BaseDataVariableType
+            DataType: ReferenceTimeZone
+            ModellingRule: Optional
+            Value: 1
           - Name: HorizontalAlignment
-            Id: g=3dcc716fb50f0fba494f36feebdea3f4
+            Id: g=e309cf658f4c5725646433734e3c8c4f
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
             Value: 3
           - Name: VerticalAlignment
-            Id: g=ebbbc2f48da7cde9cd5e57820b095321
+            Id: g=4fb38543cd9f64b5967564b91f3fef7d
             Type: BaseVariableType
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 3
           - Name: LeftMargin
-            Id: g=4e00face7465d93097b59de34facddfd
+            Id: g=84959e611deed4802873aaea1eaf3ea6
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 35.0
-          - Name: BottomMargin
-            Id: g=723ceb4c81a7aa06c21bc972aae8794d
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 28.0
+            Value: 50.0
           - Name: RightMargin
-            Id: g=19fb7c8ae18fe07799960672713bf814
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 5.0
-          - Name: TopMargin
-            Id: g=518d1c6c9b46893803cbb5da00d266e1
+            Id: g=0a054b760f3164122129c956a61a7599
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 20.0
-          - Name: CenterX
-            Id: g=964d3e0c4ade5b79268da0e61e7ce1e1
-            Type: BaseDataVariableType
-            DataType: Double
+          - Name: TopMargin
+            Id: g=504fbaed5b9d903281d9c423004ea969
+            Type: BaseVariableType
+            DataType: Size
             ModellingRule: Optional
+            Value: 50.0
+          - Name: BottomMargin
+            Id: g=d20bd32de2991d6e66f244479007b8dc
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0

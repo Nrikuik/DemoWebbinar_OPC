@@ -56,6 +56,10 @@ Children:
         - Name: Voltaje3
           Type: StoreColumn
           DataType: Float
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 4294967295
   - Class: Reference
     Target: ns=23;i=30
     Direction: Forward
@@ -178,6 +182,10 @@ Children:
         - Name: LocalTime
           Type: StoreColumn
           DataType: DateTime
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 4294967295
   - Class: Reference
     Target: ns=23;i=30
     Direction: Forward
