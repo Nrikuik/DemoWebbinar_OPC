@@ -1124,7 +1124,7 @@ Children:
             - Name: Thickness
               Type: BaseDataVariableType
               DataType: Size
-              Value: -1.0
+              Value: 3.0
             - Name: Enabled
               Type: BaseDataVariableType
               DataType: Boolean
@@ -1158,7 +1158,7 @@ Children:
             - Name: Thickness
               Type: BaseDataVariableType
               DataType: Size
-              Value: -1.0
+              Value: 3.0
             - Name: Enabled
               Type: BaseDataVariableType
               DataType: Boolean
@@ -1192,7 +1192,7 @@ Children:
             - Name: Thickness
               Type: BaseDataVariableType
               DataType: Size
-              Value: -1.0
+              Value: 3.0
             - Name: Enabled
               Type: BaseDataVariableType
               DataType: Boolean
@@ -1226,7 +1226,7 @@ Children:
             - Name: Thickness
               Type: BaseDataVariableType
               DataType: Size
-              Value: -1.0
+              Value: 3.0
             - Name: Enabled
               Type: BaseDataVariableType
               DataType: Boolean
@@ -1260,7 +1260,7 @@ Children:
             - Name: Thickness
               Type: BaseDataVariableType
               DataType: Size
-              Value: -1.0
+              Value: 3.0
             - Name: Enabled
               Type: BaseDataVariableType
               DataType: Boolean
@@ -1294,7 +1294,7 @@ Children:
             - Name: Thickness
               Type: BaseDataVariableType
               DataType: Size
-              Value: -1.0
+              Value: 3.0
             - Name: Enabled
               Type: BaseDataVariableType
               DataType: Boolean
@@ -1328,7 +1328,7 @@ Children:
             - Name: Thickness
               Type: BaseDataVariableType
               DataType: Size
-              Value: -1.0
+              Value: 3.0
             - Name: Enabled
               Type: BaseDataVariableType
               DataType: Boolean
@@ -1362,7 +1362,7 @@ Children:
             - Name: Thickness
               Type: BaseDataVariableType
               DataType: Size
-              Value: -1.0
+              Value: 3.0
             - Name: Enabled
               Type: BaseDataVariableType
               DataType: Boolean
@@ -3521,39 +3521,18 @@ Children:
                   Type: BaseDataVariableType
                   DataType: Float
                   Children:
-                  - Name: ExpressionEvaluator1
-                    Id: g=32bb481a678e8c4a66fc8d70d16daf9f
-                    Type: ExpressionEvaluator
+                  - Name: DynamicLink
+                    Id: g=cd4ae5306723f824f3d67334353ff200
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/DemoWebbinar_OPC/Model/Consumo_Instantaneo"
                     Children:
-                    - Name: Expression
-                      Id: g=6d19da807e4cc589e6b1544233e71bec
-                      Type: BaseDataVariableType
-                      DataType: String
-                      ReferenceType: HasParameter
+                    - Name: Mode
+                      Id: g=668677dc8311ed7a35bcb88e178d5705
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
                       ModellingRule: Optional
-                      Value: "({0}*{1}*(1.73205)*(0.87))/1000"
-                    - Name: ns=2;Source0
-                      Id: g=4c4cf6266448f8a125b0b8f82e320b90
-                      Type: BaseDataVariableType
-                      DataType: BaseDataType
-                      ReferenceType: HasSource
-                      Children:
-                      - Name: DynamicLink
-                        Id: g=a1ae3ad53bfce83098bc5484168d28a5
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/DemoWebbinar_OPC/Model/Vp"
-                    - Name: ns=2;Source1
-                      Id: g=2f40a0f7756bd2537fde730b34bbd1d9
-                      Type: BaseDataVariableType
-                      DataType: BaseDataType
-                      ReferenceType: HasSource
-                      Children:
-                      - Name: DynamicLink
-                        Id: g=ae27736e8fe7de29450a3f962a28ca7e
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/DemoWebbinar_OPC/Model/Cp"
+                      Value: 2
                 - Name: MinValue
                   Id: g=3f6978b7fccd4100d94d02d6ed342e0c
                   Type: BaseDataVariableType
@@ -4110,36 +4089,36 @@ Children:
                   DataType: LocalizedText
                   Children:
                   - Name: StringFormatter1
-                    Id: g=eb95635eb2b316ed4eca3444089586c8
+                    Id: g=a8c33fb151200d898d4f7df1aee5f642
                     Type: StringFormatter
                     Children:
                     - Name: Format
-                      Id: g=8d6137cec4d8ed2f30417318e9423cd9
+                      Id: g=830b85b671c3079b7a16162eb0b86f15
                       Type: BaseDataVariableType
                       DataType: LocalizedText
                       ReferenceType: HasParameter
                       ModellingRule: Optional
-                      Value: {"LocaleId":"en-US","Text":"{0:n5}"}
+                      Value: {"LocaleId":"","Text":"{0:n3}"}
                     - Name: ns=2;Source0
-                      Id: g=7e4f86e8ffb1f2288b564bc4e4bbd248
+                      Id: g=3ebd9488091304bbf77e900bddfcc219
                       Type: BaseDataVariableType
                       DataType: BaseDataType
                       ReferenceType: HasSource
                       Children:
                       - Name: DynamicLink
-                        Id: g=46f6b3b9fa65d248d56b3702673c2352
+                        Id: g=c59dd649382f2d98d96035f73a9d894a
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "/Objects/DemoWebbinar_OPC/Model/Consumo_Acumulado"
                         Children:
                         - Name: Mode
-                          Id: g=769700b6f0e1422766ea74fe52dca562
+                          Id: g=7884f071032a4e6c9283db03c0fa09d8
                           Type: BaseVariableType
                           DataType: DynamicLinkMode
                           ModellingRule: Optional
                           Value: 2
                     - Name: Mode
-                      Id: g=0c6df0386779dba45ddeaffbff4054e1
+                      Id: g=ba058d010d38944b6e71bcd0d637fdb0
                       Type: PropertyType
                       DataType: DynamicLinkMode
                       ReferenceType: HasComponent
@@ -4307,26 +4286,70 @@ Children:
           ModellingRule: Optional
           Value: -4.0
         - Name: XYChart1
-          Id: g=6936942ea71ce0c7c6b7f16567744663
+          Id: g=e51d56cddbeb1e2df68af17a5628d09a
           Type: XYChart
           Children:
           - Name: Pens
-            Id: g=fad7ed32210f2996cebaf72861b54f91
+            Id: g=372436cdf90eb70ac3903e15a6af36bc
             Type: BaseObjectType
             Children:
+            - Name: Potencia Activa
+              Id: g=e235376dd0ec29efdae9d40c9a8c5c54
+              Type: XYChartScalarLinePen
+              Children:
+              - Name: X
+                Id: g=9e2165f20937fabecf86c28c032dff3b
+                Type: BaseDataVariableType
+                DataType: Number
+                Value: {"Type":11,"Body":0.0}
+                Children:
+                - Name: DynamicLink
+                  Id: g=f964f34bae3c5dcb0e301cba2ae0a561
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Estado"
+              - Name: Y
+                Id: g=1f7c74126a2475d31817be4d47b506c6
+                Type: BaseDataVariableType
+                DataType: Number
+                Value: {"Type":11,"Body":0.0}
+                Children:
+                - Name: DynamicLink
+                  Id: g=105142943110b44e6238a030a0121bdd
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Potencia_Activa"
+              - Name: Color
+                Id: g=27b782b06a581f0dfc82efb9cd2a7ea4
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#0fafff"
+              - Name: Thickness
+                Id: g=5ccdee787c3b90772dad5ce11b6f85ba
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 3.0
             - Name: ArrayLinePen1
-              Id: g=1912da4f80df20c34caa956cfbe63807
+              Id: g=efca0dc78159c4bad6f725212a982592
               Type: XYChartArrayLinePen
               Children:
               - Name: PointArray
-                Id: g=acc1f8a7ab9cdaa4464553486cfd5cff
+                Id: g=fed3853e87dd796e1c1577ad87ad507f
                 Type: BaseDataVariableType
                 DataType: Number
                 ValueRank: 2
                 ArrayDimensions: [0,0]
                 Value: {"Type":11,"Dimensions":[0,0],"Body":[]}
+                Children:
+                - Name: DynamicLink
+                  Id: g=ad05901c4e6f587c326d6d0f5e734445
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/DemoWebbinar_OPC/Model/Instances/Bomba1/Potencia_Activa"
           - Name: LegendVisible
-            Id: g=9beffaef5b0056c53b8199c8e7392c98
+            Id: g=8477cd588ce1b31d3ea9e5eed8096487
             Type: BaseDataVariableType
             DataType: Boolean
             Value: true
@@ -4334,50 +4357,55 @@ Children:
             Target: ns=3;i=573
             Direction: Forward
           - Name: Width
-            Id: g=f73c8e004c57200e4b3a7c4ada64ef8a
+            Id: g=e45cd12bbc7181f5ae89c552fe559872
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 400.0
           - Name: Height
-            Id: g=4e550d67255e16b93dbf3a97acf59cc6
+            Id: g=7495fd8717e86ece75a9f45a2df21fac
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 400.0
           - Name: HorizontalAlignment
-            Id: g=ccb6dad58bf1db514ec1fe25a6e8a3f1
+            Id: g=3dcc716fb50f0fba494f36feebdea3f4
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
             Value: 3
           - Name: VerticalAlignment
-            Id: g=e6556859134e5366e9bffcecfd938bc2
+            Id: g=ebbbc2f48da7cde9cd5e57820b095321
             Type: BaseVariableType
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 3
           - Name: LeftMargin
-            Id: g=a18ed57ff03ac84450a6ea0738a353d5
+            Id: g=4e00face7465d93097b59de34facddfd
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 30.0
-          - Name: TopMargin
-            Id: g=fdfcd7c381eaed2eb0f1e1290f28946a
+            Value: 35.0
+          - Name: BottomMargin
+            Id: g=723ceb4c81a7aa06c21bc972aae8794d
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 15.0
+            Value: 28.0
           - Name: RightMargin
-            Id: g=b2f6e28f9ee7de755ea3a8441d7308ef
+            Id: g=19fb7c8ae18fe07799960672713bf814
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 5.0
-          - Name: BottomMargin
-            Id: g=6f6a4685b64aca291782b36a16c58bf9
+          - Name: TopMargin
+            Id: g=518d1c6c9b46893803cbb5da00d266e1
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 20.0
+          - Name: CenterX
+            Id: g=964d3e0c4ade5b79268da0e61e7ce1e1
+            Type: BaseDataVariableType
+            DataType: Double
+            ModellingRule: Optional

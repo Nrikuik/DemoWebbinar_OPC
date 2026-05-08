@@ -82,3 +82,11 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     AccessLevel: Read
+  - Name: MaxNumberOfConnections
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: MaxSubscriptionsPerSession
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 10
